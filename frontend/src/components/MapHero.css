@@ -1,0 +1,71 @@
+.map-hero {
+  position: relative;
+  height: 55vh;
+  min-height: 360px;
+  width: 100%;
+  overflow: hidden;
+  background: var(--navy-900);
+}
+.map-canvas { position: absolute; inset: 0; }
+
+/* Vinheta para fundir o mapa com o fundo escuro do app */
+.map-vignette {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(10,15,30,0.45) 0%, transparent 18%),
+    linear-gradient(0deg, var(--navy-900) 2%, transparent 28%);
+}
+.map-origin-label {
+  position: absolute; top: 14px; left: 14px;
+  padding: 8px 12px; border-radius: 999px;
+  font-family: var(--font-display); font-weight: 700; font-size: 13px;
+}
+
+/* ---- Pins ---- */
+.pin { width: 16px; height: 16px; cursor: pointer; position: relative; }
+
+.dest-pin .pin-dot {
+  position: absolute; inset: 4px; border-radius: 50%;
+  background: var(--teal); box-shadow: 0 0 10px var(--teal-glow);
+}
+.dest-pin .pin-ring {
+  position: absolute; inset: 0; border-radius: 50%;
+  border: 1.5px solid var(--teal);
+  animation: pinPulse 2s ease-out infinite;
+}
+.dest-pin.tone-hot .pin-dot { background: #00F0C0; }
+.dest-pin.tone-hot .pin-ring { border-color: #00F0C0; }
+.dest-pin.tone-mild .pin-dot { background: var(--amber); box-shadow: 0 0 10px rgba(255,180,84,0.5); }
+.dest-pin.tone-mild .pin-ring { border-color: var(--amber); }
+.dest-pin.tone-flat .pin-dot { background: var(--text-dim); box-shadow: none; }
+.dest-pin.tone-flat .pin-ring { border-color: var(--text-faint); animation: none; }
+
+@keyframes pinPulse {
+  0% { transform: scale(0.6); opacity: 0.9; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+
+.origin-pin { width: 22px; height: 22px; }
+.origin-pin .pin-origin-core {
+  position: absolute; inset: 7px; border-radius: 50%;
+  background: #fff; box-shadow: 0 0 14px rgba(255,255,255,0.8);
+}
+.origin-pin .pin-origin-ring {
+  position: absolute; inset: 0; border-radius: 50%;
+  border: 2px solid #fff; opacity: 0.6;
+  animation: pinPulse 2.4s ease-out infinite;
+}
+
+/* ---- Fallback sem token ---- */
+.map-fallback {
+  display: grid; place-items: center;
+  background:
+    radial-gradient(600px 300px at 50% 30%, rgba(0,212,170,0.08), transparent 70%),
+    var(--navy-900);
+}
+.map-fallback-inner { text-align: center; max-width: 300px; padding: 24px; }
+.map-fallback-emoji { font-size: 44px; margin-bottom: 10px; }
+.map-fallback code {
+  background: rgba(255,255,255,0.08); padding: 1px 5px; border-radius: 6px;
+  font-size: 12px;
+}

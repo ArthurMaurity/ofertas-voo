@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Arquivos de teste local
+test_fluxo.py
+
+# NÃO ignoramos precos.db nem iata_cache.json de propósito:
+# eles precisam ser versionados para o histórico sobreviver entre execuções
+# do GitHub Actions (que não tem disco persistente).
+
+# Segredos locais (caso você crie um .env para testar na sua máquina)
+.env
+
+# Frontend (Node)
+frontend/node_modules/
+frontend/dist/
+# Cópia local dos dados para o dev server; é gerada pelo build/deploy.
+frontend/public/data/
+
+# data/deals.json e data/history.json SÃO versionados de propósito:
+# o site no GitHub Pages lê esses arquivos diretamente do repositório.

@@ -1,0 +1,45 @@
+.deal-page { padding-bottom: 12px; }
+
+.deal-hero { position: relative; height: 300px; overflow: hidden; }
+.deal-hero-img { width: 100%; height: 100%; object-fit: cover; }
+.deal-hero-grad {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(10,15,30,0.25) 0%, rgba(10,15,30,0.2) 45%, var(--navy-900) 100%);
+}
+.back-btn {
+  position: absolute; top: 16px; left: 14px;
+  width: 40px; height: 40px; border-radius: 50%;
+  font-size: 20px; display: grid; place-items: center;
+}
+.deal-hero-info { position: absolute; bottom: 16px; left: 18px; right: 18px; }
+.deal-hero-info h1 { font-size: 34px; font-weight: 800; line-height: 1; margin-top: 4px; }
+.deal-hero-code {
+  font-family: var(--font-display); font-weight: 700; font-size: 13px;
+  color: var(--text-dim);
+}
+
+.price-card { margin: -34px 16px 0; border-radius: var(--radius); position: relative; z-index: 2; }
+.price-main { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.price-big { font-family: var(--font-display); font-size: 40px; font-weight: 800; }
+.price-stats { display: flex; gap: 18px; margin-top: 14px; flex-wrap: wrap; }
+.stat, .fact { display: flex; flex-direction: column; gap: 3px; }
+.stat span, .fact span { font-size: 11px; }
+.stat strong { font-size: 15px; }
+
+.block-title { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
+.chart-card { border-radius: var(--radius); padding: 14px 12px 10px; }
+.chart-foot { font-size: 11.5px; text-align: center; margin-top: 8px; }
+
+.deal-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+.fact { border-radius: var(--radius-sm); padding: 12px 14px; }
+.fact strong { font-size: 15px; margin-top: 2px; }
+
+.cta-btn {
+  display: block; text-align: center;
+  background: linear-gradient(135deg, #00F0C0, #00D4AA);
+  color: #04201A; font-family: var(--font-display); font-weight: 800; font-size: 16px;
+  padding: 16px; border-radius: 16px;
+  box-shadow: 0 10px 30px var(--teal-glow);
+}
+.cta-note { text-align: center; font-size: 11.5px; margin-top: 10px; }
+.link-btn { color: var(--teal); text-decoration: underline; }

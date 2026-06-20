@@ -1,0 +1,46 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.01em;
+  padding: 5px 10px;
+  border-radius: 999px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.badge-hot {
+  color: #04201A;
+  background: linear-gradient(135deg, #00F0C0, #00D4AA);
+  box-shadow: 0 4px 16px var(--teal-glow);
+}
+.badge-good {
+  color: var(--teal);
+  background: var(--teal-soft);
+  border: 1px solid rgba(0, 212, 170, 0.35);
+}
+.badge-mild {
+  color: var(--amber);
+  background: rgba(255, 180, 84, 0.14);
+  border: 1px solid rgba(255, 180, 84, 0.3);
+}
+.badge-flat {
+  color: var(--text-dim);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--glass-border);
+}
+
+.badge-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 0 currentColor;
+  animation: badgePulse 1.6s infinite;
+}
+@keyframes badgePulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 212, 170, 0.5); }
+  70% { box-shadow: 0 0 0 7px rgba(0, 212, 170, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 212, 170, 0); }
+}

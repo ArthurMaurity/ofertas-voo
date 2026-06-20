@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.env.local
+*.local
+.DS_Store
+
+# data/ é copiado pelo workflow de deploy na hora do build.
+public/data/

@@ -1,0 +1,36 @@
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
+import BottomNav from './components/BottomNav'
+import Home from './pages/Home'
+import Deal from './pages/Deal'
+import RoutesPage from './pages/RoutesPage'
+import Config from './pages/Config'
+
+const pageMotion = {
+  initial: { opacity: 0, y: 12 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -8 },
+  transition: { duration: 0.28, ease: [0.16, 1, 0.3, 1] },
+}
+
+function Page({ children }) {
+  return <motion.div {...pageMotion}>{children}</motion.div>
+}
+
+export default function App() {
+  const location = useLocation()
+  return (
+    <div className="app-shell">
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Page><Home /></Page>} />
+          <Route path="/deal/:code" element={<Page><Deal /></Page>} />
+          <Route path="/rotas" element={<Page><RoutesPage /></Page>} />
+          <Route path="/config" element={<Page><Config /></Page>} />
+          <Route path="*" element={<Page><Home /></Page>} />
+        </Routes>
+      </AnimatePresence>
+      <BottomNav />
+    </div>
+  )
+}
