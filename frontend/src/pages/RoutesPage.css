@@ -28,3 +28,10 @@
 .route-spark { height: 36px; }
 .route-right { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; }
 .route-price { font-family: var(--font-display); font-weight: 800; font-size: 16px; }
+
+/* Tablet (2 colunas): célula estreita demais para o sparkline — escondemos e
+   damos todo o espaço ao nome da cidade. O sparkline volta no desktop (3 col). */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .route-row { grid-template-columns: 1fr auto; }
+  .route-spark { display: none; }
+}
