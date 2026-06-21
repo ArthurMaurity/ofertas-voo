@@ -1,11 +1,12 @@
-import { useEffect, useRef, useState } from 'react'
-import mapboxgl from 'mapbox-gl'
+import { useEffect, useRef } from 'react'
+import maplibregl from 'maplibre-gl'
 import { useNavigate } from 'react-router-dom'
 import { greatCircle, bounds } from '../lib/geo'
 import { dropTone } from '../lib/utils'
 import './MapHero.css'
 
-const TOKEN = import.meta.env.VITE_MAPBOX_TOKEN
+// Estilo dark gratuito do OpenFreeMap — sem API key, sem conta, sem cartão.
+const MAP_STYLE = 'https://tiles.openfreemap.org/styles/dark'
 
 // Sequência de dasharrays para o efeito de "fluxo" correndo pelo arco.
 const DASH_SEQ = [
@@ -19,36 +20,33 @@ export default function MapHero({ origin, deals = [], onReady }) {
   const containerRef = useRef(null)
   const mapRef = useRef(null)
   const navigate = useNavigate()
-  const [missingToken] = useState(!TOKEN || TOKEN.includes('COLE_SEU'))
 
   useEffect(() => {
-    if (missingToken || !origin || !containerRef.current || mapRef.current) return
+    if (!origin || !containerRef.current || mapRef.current) return
 
-    mapboxgl.accessToken = TOKEN
     const pts = deals.filter((d) => d.lat != null && d.lon != null)
 
-    const map = new mapboxgl.Map({
+    const map = new maplibregl.Map({
       container: containerRef.current,
-      style: 'mapbox://styles/mapbox/dark-v11',
+      style: MAP_STYLE,
       center: [origin.lon, origin.lat],
       zoom: 2.4,
       attributionControl: false,
-      projection: 'globe',
       pitch: 0,
     })
     mapRef.current = map
 
-    map.on('style.load', () => {
-      map.setFog({
-        color: 'rgb(10,15,30)',
-        'high-color': 'rgb(14,21,40)',
-        'horizon-blend': 0.2,
-        'space-color': 'rgb(6,9,18)',
-        'star-intensity': 0.45,
-      })
-    })
+    // O mapa é criado dentro do useEffect enquanto a página ainda está em
+    // transição (framer-motion) — o container pode reportar tamanho 0 no
+    // primeiro frame, o que deixa o canvas WebGL preto. Forçar resize após o
+    // layout estabilizar garante que ele preencha o container.
+    const resize = () => map.resize()
+    const ro = new ResizeObserver(resize)
+    ro.observe(containerRef.current)
+    const rafResize = requestAnimationFrame(resize)
 
     map.on('load', () => {
+      map.resize()
       // ---- Arcos (great circle) como uma única fonte GeoJSON ----
       const features = pts.map((d) => ({
         type: 'Feature',
@@ -84,16 +82,17 @@ export default function MapHero({ origin, deals = [], onReady }) {
         },
       })
 
-      // Animação do "fluxo" via dasharray.
+      // Animação do "fluxo" via dasharray. Os ids de rAF/timeout ficam no map
+      // para serem cancelados no cleanup — senão o callback agendado dispara
+      // depois de map.remove() e quebra em map.getLayer (style já undefined).
       let step = 0
       const animate = () => {
+        if (mapRef.current !== map || !map.getLayer('arcs-flow')) return
         step = (step + 1) % DASH_SEQ.length
-        if (map.getLayer('arcs-flow')) {
-          map.setPaintProperty('arcs-flow', 'line-dasharray', DASH_SEQ[step])
-        }
-        mapRef.current && (mapRef.current._dashRAF = requestAnimationFrame(() => {
-          setTimeout(animate, 60)
-        }))
+        map.setPaintProperty('arcs-flow', 'line-dasharray', DASH_SEQ[step])
+        map._dashTimer = setTimeout(() => {
+          map._dashRAF = requestAnimationFrame(animate)
+        }, 60)
       }
       animate()
 
@@ -117,24 +116,14 @@ export default function MapHero({ origin, deals = [], onReady }) {
     })
 
     return () => {
+      cancelAnimationFrame(rafResize)
+      ro.disconnect()
       if (map._dashRAF) cancelAnimationFrame(map._dashRAF)
+      if (map._dashTimer) clearTimeout(map._dashTimer)
       map.remove()
       mapRef.current = null
     }
-  }, [origin, deals, missingToken, navigate, onReady])
-
-  if (missingToken) {
-    return (
-      <div className="map-hero map-fallback">
-        <div className="map-fallback-inner">
-          <div className="map-fallback-emoji">🗺️</div>
-          <p><strong>Mapa indisponível</strong></p>
-          <p className="muted">Configure <code>VITE_MAPBOX_TOKEN</code> no arquivo
-            <code> .env</code> para ver os arcos animados saindo do Rio.</p>
-        </div>
-      </div>
-    )
-  }
+  }, [origin, deals, navigate, onReady])
 
   return (
     <div className="map-hero">
@@ -156,6 +145,6 @@ function addMarker(map, lon, lat, className, deal) {
   } else {
     el.innerHTML = '<span class="pin-origin-core"></span><span class="pin-origin-ring"></span>'
   }
-  new mapboxgl.Marker({ element: el }).setLngLat([lon, lat]).addTo(map)
+  new maplibregl.Marker({ element: el }).setLngLat([lon, lat]).addTo(map)
   return el
 }

@@ -46,9 +46,6 @@ jobs:
       - name: Build
         working-directory: frontend
         env:
-          # Token PÚBLICO do Mapbox (pk....). Cadastre em
-          # Settings > Secrets and variables > Actions > New repository secret.
-          VITE_MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
           # Base path = /<nome-do-repo>/ para o GitHub Pages de projeto.
           VITE_BASE: /${{ github.event.repository.name }}/
         run: npm run build

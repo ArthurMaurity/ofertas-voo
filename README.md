@@ -51,7 +51,7 @@ ofertas-voo/
 ## 🎨 Frontend
 
 Mobile-first, fundo deep navy (`#0A0F1E`), accent teal (`#00D4AA`), cards com
-glassmorphism, mapa Mapbox com arcos animados Rio→destinos, animações com
+glassmorphism, mapa MapLibre + OpenFreeMap com arcos animados Rio→destinos, animações com
 Framer Motion e sparklines com Recharts.
 
 **Telas:** Home (mapa hero + scroll de ofertas) · Detalhe da oferta (foto, histórico,
@@ -63,16 +63,12 @@ botão Aviasales) · Rotas (lista com mini sparkline) · Config (preferências l
 cd frontend
 npm install
 cp ../data/*.json public/data/      # serve os dados no dev server
-cp .env.example .env                # e cole seu token do Mapbox no .env
 npm run dev
 ```
 
-> 🔑 **Lembrete: configurar o token do Mapbox.** O mapa só renderiza com um
-> token **público** (`pk....`). Crie em <https://account.mapbox.com/> e:
-> - **Local:** coloque em `frontend/.env` como `VITE_MAPBOX_TOKEN=pk....`
-> - **Deploy:** crie o secret `MAPBOX_TOKEN` no repositório (Settings → Secrets
->   and variables → Actions). Sem token, o app mostra um fallback elegante no
->   lugar do mapa — o resto funciona normalmente.
+> 🗺️ **Mapa sem configuração.** Usa **MapLibre GL JS + OpenFreeMap** — sem API
+> key, sem conta, sem cartão de crédito. Funciona localmente e no deploy sem
+> nenhum segredo.
 
 ---
 
@@ -98,7 +94,6 @@ git push -u origin main
 |---|---|
 | `TP_TOKEN` | token do Travelpayouts (Profile → API token) |
 | `DESTINATARIOS_WHATS` | JSON dos destinatários do WhatsApp (abaixo) |
-| `MAPBOX_TOKEN` | token **público** do Mapbox (`pk....`) — para o mapa no Pages |
 
 **WhatsApp (CallMeBot):** cada número precisa autorizar uma vez —
 salve o contato **+34 644 51 95 23**, envie `I allow callmebot to send me messages`

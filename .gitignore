@@ -22,3 +22,6 @@ frontend/public/data/
 
 # data/deals.json e data/history.json SÃO versionados de propósito:
 # o site no GitHub Pages lê esses arquivos diretamente do repositório.
+
+# Screenshots de verificacao (nao versionar)
+screenshots/

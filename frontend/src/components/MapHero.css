@@ -6,7 +6,8 @@
   overflow: hidden;
   background: var(--navy-900);
 }
-.map-canvas { position: absolute; inset: 0; }
+.map-canvas { position: absolute; inset: 0; height: 100%; width: 100%; background: var(--navy-900); }
+.map-canvas canvas { outline: none; }
 
 /* Vinheta para fundir o mapa com o fundo escuro do app */
 .map-vignette {

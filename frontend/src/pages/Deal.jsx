@@ -5,7 +5,7 @@ import Sparkline from '../components/Sparkline'
 import Badge from '../components/Badge'
 import CountUp from '../components/CountUp'
 import { Loading, Empty } from '../components/States'
-import { formatBRL, formatDate, photoUrl, dropTone } from '../lib/utils'
+import { formatBRL, formatDate, regionGradient, dropTone } from '../lib/utils'
 import './Deal.css'
 
 export default function Deal() {
@@ -32,7 +32,7 @@ export default function Deal() {
   return (
     <div className="deal-page">
       <div className="deal-hero">
-        <img src={photoUrl(d, 900, 700)} alt={d.cidade} className="deal-hero-img" />
+        <div className="deal-hero-img" style={{ background: regionGradient(d) }} />
         <div className="deal-hero-grad" />
         <button className="back-btn glass" onClick={() => navigate(-1)}>←</button>
         <div className="deal-hero-info">
