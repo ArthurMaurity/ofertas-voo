@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import Badge from './Badge'
+import { usePassengers, totalFor } from '../context/PassengersContext'
 import { formatBRL, formatDate, regionGradient, dropTone } from '../lib/utils'
 import './DealCard.css'
 
 // Card de oferta para o scroll horizontal da Home.
 export default function DealCard({ deal, index = 0 }) {
   const navigate = useNavigate()
+  const { adults } = usePassengers()
   const tone = dropTone(deal.queda_pct)
   const dep = formatDate(deal.departure_at)
 
@@ -35,9 +37,9 @@ export default function DealCard({ deal, index = 0 }) {
           <span className="deal-code">{deal.destino}</span>
         </div>
         <div className="deal-price-row">
-          <span className="deal-price">{formatBRL(deal.preco_brl)}</span>
+          <span className="deal-price">{formatBRL(totalFor(deal.preco_brl, adults))}</span>
           {deal.media && (
-            <span className="deal-old">{formatBRL(deal.media)}</span>
+            <span className="deal-old">{formatBRL(totalFor(deal.media, adults))}</span>
           )}
         </div>
         <div className="deal-meta faint">

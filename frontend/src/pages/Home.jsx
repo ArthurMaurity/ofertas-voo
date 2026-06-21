@@ -2,12 +2,15 @@ import { motion } from 'framer-motion'
 import { useDeals } from '../data/useData'
 import MapHero from '../components/MapHero'
 import DealCard from '../components/DealCard'
+import PassengerSelector from '../components/PassengerSelector'
 import { Loading, Empty } from '../components/States'
+import { usePassengers, totalFor } from '../context/PassengersContext'
 import { formatBRL } from '../lib/utils'
 import './Home.css'
 
 export default function Home() {
   const { deals, origin, loading, error, generatedAt } = useDeals()
+  const { adults } = usePassengers()
 
   if (loading) return <Loading />
   if (error) return <Empty emoji="📡" title="Sem conexão com os dados">{String(error.message)}</Empty>
@@ -23,7 +26,10 @@ export default function Home() {
       <MapHero origin={origin} deals={deals} />
 
       <header className="home-head section-pad">
-        <div className="eyebrow">Saindo do Rio de Janeiro</div>
+        <div className="home-head-top">
+          <div className="eyebrow">Saindo do Rio de Janeiro</div>
+          <PassengerSelector />
+        </div>
         <h1 className="home-title">
           {hot.length > 0
             ? <>{hot.length} {hot.length === 1 ? 'oferta quente' : 'ofertas quentes'} agora 🔥</>
@@ -32,7 +38,7 @@ export default function Home() {
         {melhor && (
           <p className="muted home-sub">
             Mais barata: <strong style={{ color: 'var(--text)' }}>{melhor.cidade}</strong> por{' '}
-            <strong style={{ color: 'var(--teal)' }}>{formatBRL(melhor.preco_brl)}</strong>
+            <strong style={{ color: 'var(--teal)' }}>{formatBRL(totalFor(melhor.preco_brl, adults))}</strong>
           </p>
         )}
       </header>

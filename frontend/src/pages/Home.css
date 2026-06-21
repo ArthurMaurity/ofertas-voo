@@ -1,4 +1,11 @@
 .home-head { padding-top: 8px; }
+.home-head-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 2px;
+}
 .home-title {
   font-size: 26px; font-weight: 800; line-height: 1.12; margin-top: 6px;
   background: linear-gradient(120deg, #fff 30%, var(--teal) 140%);

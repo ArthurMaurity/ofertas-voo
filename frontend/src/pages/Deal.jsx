@@ -5,12 +5,14 @@ import Sparkline from '../components/Sparkline'
 import Badge from '../components/Badge'
 import CountUp from '../components/CountUp'
 import { Loading, Empty } from '../components/States'
+import { usePassengers, totalFor } from '../context/PassengersContext'
 import { formatBRL, formatDate, regionGradient, dropTone } from '../lib/utils'
 import './Deal.css'
 
 export default function Deal() {
   const { code } = useParams()
   const navigate = useNavigate()
+  const { adults } = usePassengers()
   const { deals, loading: l1 } = useDeals()
   const { routes, loading: l2 } = useHistory()
 
@@ -46,13 +48,18 @@ export default function Deal() {
         initial={{ y: 24, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 260, damping: 26 }}>
         <div className="price-main">
-          <CountUp value={d.preco_brl} className="price-big" />
+          <CountUp value={totalFor(d.preco_brl, adults)} className="price-big" />
           {d.queda_pct > 0 && <Badge pct={d.queda_pct} tone={tone} pulse={tone === 'hot'} />}
         </div>
+        {adults > 1 && (
+          <p className="price-pax faint">
+            {formatBRL(d.preco_brl)} por adulto · {adults} passageiros
+          </p>
+        )}
         <div className="price-stats">
-          {d.media && <Stat label="média histórica" value={formatBRL(d.media)} />}
-          {route?.min != null && <Stat label="menor visto" value={formatBRL(route.min)} accent />}
-          {route?.max != null && <Stat label="maior visto" value={formatBRL(route.max)} />}
+          {d.media && <Stat label="média histórica" value={formatBRL(totalFor(d.media, adults))} />}
+          {route?.min != null && <Stat label="menor visto" value={formatBRL(totalFor(route.min, adults))} accent />}
+          {route?.max != null && <Stat label="maior visto" value={formatBRL(totalFor(route.max, adults))} />}
         </div>
       </motion.div>
 

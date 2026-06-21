@@ -1,0 +1,55 @@
+/* Pill de seleção de passageiros — herda o glassmorphism do app. */
+.pax-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  user-select: none;
+}
+
+.pax-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--teal);
+  background: var(--teal-soft);
+  border: 1px solid rgba(0, 212, 170, 0.32);
+  transition: background 0.18s ease, transform 0.18s ease, opacity 0.18s ease;
+}
+.pax-btn:hover:not(:disabled) {
+  background: rgba(0, 212, 170, 0.26);
+  box-shadow: 0 0 12px var(--teal-glow);
+}
+.pax-btn:disabled {
+  color: var(--text-faint);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--glass-border);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pax-value {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 0 8px;
+  min-width: 78px;
+  justify-content: center;
+}
+.pax-icon { font-size: 12px; align-self: center; }
+.pax-count {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--text);
+}
+.pax-label {
+  font-size: 12px;
+  color: var(--text-dim);
+}

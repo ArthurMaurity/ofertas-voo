@@ -145,6 +145,9 @@ def exportar():
         "config": {
             "queda_pct": config.QUEDA_PCT,
             "meses": config.MESES_IDA,
+            # A API busca sempre preço unitário (1 adulto). O frontend multiplica
+            # localmente pelo número de passageiros escolhido pelo usuário.
+            "adults": 1,
         },
         "deals": deals,
     })
