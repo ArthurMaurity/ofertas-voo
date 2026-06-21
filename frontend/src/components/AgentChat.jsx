@@ -33,14 +33,34 @@ export default function AgentChat() {
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const [budget, setBudget] = useState(null)
+  const [isDesktop, setIsDesktop] = useState(false)
   const scrollRef = useRef(null)
 
   const { deals } = useDeals()
   const { adults } = usePassengers()
 
+  // No desktop (>=1024px) o chat é um painel lateral fixo, não um drawer de baixo.
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1024px)')
+    const sync = () => setIsDesktop(mq.matches)
+    sync()
+    mq.addEventListener('change', sync)
+    return () => mq.removeEventListener('change', sync)
+  }, [])
+
+  // Quando o painel está aberto no desktop, desloca o conteúdo para não sobrepor.
+  useEffect(() => {
+    document.body.classList.toggle('agent-panel-open', open && isDesktop)
+    return () => document.body.classList.remove('agent-panel-open')
+  }, [open, isDesktop])
+
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight
   }, [messages, loading, open])
+
+  // Animação: sobe de baixo no mobile/tablet; entra pela direita no desktop.
+  const hidden = isDesktop ? { x: '100%' } : { y: '100%' }
+  const shown = isDesktop ? { x: 0 } : { y: 0 }
 
   const send = useCallback(async () => {
     const text = input.trim()
@@ -105,18 +125,20 @@ export default function AgentChat() {
       <AnimatePresence>
         {open && (
           <>
-            <motion.div
-              className="agent-backdrop"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setOpen(false)}
-            />
+            {!isDesktop && (
+              <motion.div
+                className="agent-backdrop"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setOpen(false)}
+              />
+            )}
             <motion.div
               className="agent-drawer glass"
-              initial={{ y: '100%' }}
-              animate={{ y: 0 }}
-              exit={{ y: '100%' }}
+              initial={hidden}
+              animate={shown}
+              exit={hidden}
               transition={{ type: 'spring', stiffness: 320, damping: 34 }}
             >
               <header className="agent-head">

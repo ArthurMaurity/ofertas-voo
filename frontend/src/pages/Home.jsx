@@ -25,6 +25,7 @@ export default function Home() {
     <div className="home">
       <MapHero origin={origin} deals={deals} />
 
+      <div className="home-side">
       <header className="home-head section-pad">
         <div className="home-head-top">
           <div className="eyebrow">Saindo do Rio de Janeiro</div>
@@ -59,6 +60,7 @@ export default function Home() {
           Atualizado em {atualizado} · dados de cache do Aviasales
         </motion.p>
       )}
+      </div>
     </div>
   )
 }

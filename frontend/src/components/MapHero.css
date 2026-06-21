@@ -9,6 +9,15 @@
 .map-canvas { position: absolute; inset: 0; height: 100%; width: 100%; background: var(--navy-900); }
 .map-canvas canvas { outline: none; }
 
+/* Tablet: mapa um pouco mais alto. */
+@media (min-width: 768px) {
+  .map-hero { height: 60vh; }
+}
+/* Desktop: mapa em tela cheia (largura definida pelo layout side-by-side da Home). */
+@media (min-width: 1024px) {
+  .map-hero { height: 100vh; min-height: 100vh; }
+}
+
 /* Vinheta para fundir o mapa com o fundo escuro do app */
 .map-vignette {
   position: absolute; inset: 0; pointer-events: none;
