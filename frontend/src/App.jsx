@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import BottomNav from './components/BottomNav'
+import AgentChat from './components/AgentChat'
 import Home from './pages/Home'
 import Deal from './pages/Deal'
 import RoutesPage from './pages/RoutesPage'
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="*" element={<Page><Home /></Page>} />
         </Routes>
       </AnimatePresence>
+      <AgentChat />
       <BottomNav />
     </div>
   )

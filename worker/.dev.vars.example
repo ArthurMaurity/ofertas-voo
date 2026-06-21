@@ -1,0 +1,3 @@
+# Copie para `.dev.vars` (ignorado pelo git) para testar localmente com `wrangler dev`.
+# NUNCA commite o valor real da chave.
+GROQ_API_KEY=

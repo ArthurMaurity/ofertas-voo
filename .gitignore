@@ -25,3 +25,9 @@ frontend/public/data/
 
 # Screenshots de verificacao (nao versionar)
 screenshots/
+
+# Cloudflare Worker
+worker/node_modules/
+worker/.wrangler/
+# Segredos locais do Worker (GROQ_API_KEY em dev) — NUNCA versionar.
+worker/.dev.vars

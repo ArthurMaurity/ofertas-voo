@@ -1,0 +1,10 @@
+name = "ofertas-voo-agent"
+main = "index.js"
+compatibility_date = "2026-06-21"
+
+# GROQ_API_KEY NÃO fica aqui com valor. Em produção use:
+#   wrangler secret put GROQ_API_KEY
+# ou configure como Secret no Cloudflare Dashboard (Workers > Settings > Variables).
+# O placeholder abaixo serve só de documentação; deixe vazio no commit.
+[vars]
+GROQ_API_KEY = ""
