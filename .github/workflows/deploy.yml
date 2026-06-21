@@ -48,6 +48,9 @@ jobs:
         env:
           # Base path = /<nome-do-repo>/ para o GitHub Pages de projeto.
           VITE_BASE: /${{ github.event.repository.name }}/
+          # URL pública do Cloudflare Worker (proxy do agente Groq).
+          # Configure em Settings > Secrets and variables > Actions > New secret.
+          VITE_AGENT_URL: ${{ secrets.VITE_AGENT_URL }}
         run: npm run build
 
       - name: Configurar Pages
