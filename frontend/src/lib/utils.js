@@ -17,15 +17,6 @@ export function formatDate(iso) {
   return d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })
 }
 
-export function formatDateTimeBR(iso) {
-  if (!iso) return null
-  const d = new Date(iso)
-  if (Number.isNaN(d.getTime())) return null
-  return d.toLocaleString('pt-BR', {
-    day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit',
-  })
-}
-
 // Paleta por região — gera o "visual" do destino sem depender de serviço
 // externo (Unsplash/loremflickr). Cada região tem cores próprias e um brilho
 // de acento; a posição do brilho varia por destino (hash do IATA) pra que dois
@@ -65,8 +56,4 @@ export function dropTone(pct) {
   if (pct >= 15) return 'good'
   if (pct > 0) return 'mild'
   return 'flat'
-}
-
-export function regionFlagless(region) {
-  return region || 'Outros'
 }

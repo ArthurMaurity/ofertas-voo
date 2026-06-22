@@ -5,13 +5,8 @@ const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions'
 const MODEL = 'llama-3.3-70b-versatile'
 
 // Origens autorizadas a chamar o Worker (GitHub Pages + dev local).
-const ALLOWED_ORIGINS = [
-  'https://arthurmaurity.github.io',
-  'http://localhost:5173',
-  'http://localhost:5174',
-  'http://localhost:5175',
-  'http://localhost:5176',
-]
+const PROD_ORIGIN = 'https://arthurmaurity.github.io'
+const isAllowed = (o) => o === PROD_ORIGIN || o.startsWith('http://localhost:')
 
 const SYSTEM_PROMPT = `Você é um assistente especialista em viagens baratas saindo do Rio de Janeiro.
 Você tem acesso às ofertas reais do momento e ao histórico de preços de cada rota.
@@ -22,7 +17,7 @@ queda percentual vs histórico, e por que é uma boa oportunidade agora.
 Para perguntas sobre destinos (visto, clima, o que fazer), responda com base no seu conhecimento.`
 
 function corsHeaders(origin) {
-  const allow = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0]
+  const allow = isAllowed(origin) ? origin : PROD_ORIGIN
   return {
     'Access-Control-Allow-Origin': allow,
     'Access-Control-Allow-Methods': 'POST, OPTIONS',

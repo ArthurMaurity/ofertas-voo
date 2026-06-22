@@ -23,11 +23,6 @@ ORIGEM_LON = -43.1729
 # O monitor vai consultar cada mês da lista abaixo.
 MESES_IDA = ["2026-07", "2026-08"]
 
-# Duração da viagem em dias (usado só como filtro/exibição; a API de cache
-# nem sempre respeita à risca, então tratamos como referência).
-DURACAO_MIN_DIAS = 7
-DURACAO_MAX_DIAS = 14
-
 # ---------------------------------------------------------------------------
 # MOEDA
 # ---------------------------------------------------------------------------

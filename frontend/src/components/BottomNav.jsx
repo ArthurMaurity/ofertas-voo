@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 const ITEMS = [
   { to: '/', label: 'Início', icon: '🌎', end: true },
   { to: '/rotas', label: 'Rotas', icon: '📈', end: false },
-  { to: '/config', label: 'Config', icon: '⚙️', end: false },
 ]
 
 export default function BottomNav() {
