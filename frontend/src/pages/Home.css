@@ -38,6 +38,9 @@
 
 /* ---- Desktop: mapa à esquerda (60%), ofertas à direita com scroll ---- */
 @media (min-width: 1024px) {
+  /* Wrapper de transição (framer-motion) precisa de altura explícita, senão o
+     canvas do mapa mede 0 durante o mount e inicializa preto. */
+  .page { height: 100vh; }
   .home { display: flex; align-items: flex-start; height: 100vh; }
   .home .map-hero { flex: 0 0 60%; max-width: 60%; }
   .home-side {

@@ -15,7 +15,7 @@ const pageMotion = {
 }
 
 function Page({ children }) {
-  return <motion.div {...pageMotion}>{children}</motion.div>
+  return <motion.div className="page" {...pageMotion}>{children}</motion.div>
 }
 
 export default function App() {

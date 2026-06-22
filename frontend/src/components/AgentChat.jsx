@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
+import { useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useDeals } from '../data/useData'
 import { usePassengers } from '../context/PassengersContext'
@@ -38,6 +39,9 @@ export default function AgentChat() {
 
   const { deals } = useDeals()
   const { adults } = usePassengers()
+
+  // O agente não faz sentido na tela de detalhe; esconde o FAB lá.
+  const onDeal = useLocation().pathname.startsWith('/deal')
 
   // No desktop (>=1024px) o chat é um painel lateral fixo, não um drawer de baixo.
   useEffect(() => {
@@ -109,18 +113,20 @@ export default function AgentChat() {
 
   return (
     <div className="agent-root">
-      {/* Botão flutuante */}
-      <motion.button
-        className="agent-fab"
-        onClick={() => setOpen(true)}
-        whileTap={{ scale: 0.9 }}
-        whileHover={{ scale: 1.05 }}
-        aria-label="Abrir assistente de viagens"
-        animate={open ? { scale: 0, opacity: 0 } : { scale: 1, opacity: 1 }}
-        transition={{ type: 'spring', stiffness: 360, damping: 26 }}
-      >
-        <span className="agent-fab-icon">✨</span>
-      </motion.button>
+      {/* Botão flutuante — escondido na tela de detalhe (sobrepõe "Ver no Aviasales"). */}
+      {!onDeal && (
+        <motion.button
+          className="agent-fab"
+          onClick={() => setOpen(true)}
+          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.05 }}
+          aria-label="Abrir assistente de viagens"
+          animate={open ? { scale: 0, opacity: 0 } : { scale: 1, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 360, damping: 26 }}
+        >
+          <span className="agent-fab-icon">✨</span>
+        </motion.button>
+      )}
 
       <AnimatePresence>
         {open && (
