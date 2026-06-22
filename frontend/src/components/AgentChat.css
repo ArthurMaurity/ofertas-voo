@@ -13,7 +13,9 @@
 .agent-fab {
   position: absolute;
   right: 18px;
-  bottom: calc(92px + env(safe-area-inset-bottom));
+  /* ponytail: acima da bottom-nav flutuante (top ~74px); z para não ficar atrás do conteúdo */
+  bottom: calc(80px + env(safe-area-inset-bottom));
+  z-index: 1;
   width: 58px;
   height: 58px;
   border-radius: 50%;
