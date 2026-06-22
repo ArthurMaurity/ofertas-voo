@@ -6,6 +6,24 @@ import { usePassengers } from '../context/PassengersContext'
 import './AgentChat.css'
 
 const AGENT_URL = import.meta.env.VITE_AGENT_URL || ''
+const PREFS_KEY = 'voa-rio-prefs'
+
+function loadPrefs() {
+  try {
+    return JSON.parse(localStorage.getItem(PREFS_KEY)) || {}
+  } catch {
+    return {}
+  }
+}
+
+// Texto livre que descreve as preferências salvas, ou '' se não houver nenhuma.
+function prefsToText(p) {
+  const partes = []
+  if (p.threshold) partes.push(`alertar em quedas a partir de ${p.threshold}%`)
+  if (p.destinos_favoritos) partes.push(`destinos de interesse: ${p.destinos_favoritos}`)
+  if (p.epoca_preferida) partes.push(`época preferida: ${p.epoca_preferida}`)
+  return partes.join('; ')
+}
 
 const WELCOME = {
   role: 'assistant',
@@ -35,7 +53,22 @@ export default function AgentChat() {
   const [loading, setLoading] = useState(false)
   const [budget, setBudget] = useState(null)
   const [isDesktop, setIsDesktop] = useState(false)
+  const [prefs, setPrefs] = useState(loadPrefs)
+  const [prefsOpen, setPrefsOpen] = useState(false)
   const scrollRef = useRef(null)
+  const saveTimer = useRef(null)
+
+  // Salva no localStorage com debounce de 500ms ao digitar.
+  const updatePref = useCallback((campo, valor) => {
+    setPrefs((p) => {
+      const next = { ...p, [campo]: valor }
+      clearTimeout(saveTimer.current)
+      saveTimer.current = setTimeout(() => {
+        localStorage.setItem(PREFS_KEY, JSON.stringify(next))
+      }, 500)
+      return next
+    })
+  }, [])
 
   const { deals } = useDeals()
   const { adults } = usePassengers()
@@ -81,11 +114,21 @@ export default function AgentChat() {
 
     try {
       if (!AGENT_URL) throw new Error('Assistente não configurado (VITE_AGENT_URL ausente).')
+      const prefsText = prefsToText(prefs)
+      const prefsMsgs = prefsText
+        ? [
+            { role: 'user', content: `Minhas preferências salvas: ${prefsText}` },
+            { role: 'assistant', content: 'Entendido! Vou considerar suas preferências.' },
+          ]
+        : []
       const res = await fetch(AGENT_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          messages: history.filter((m) => m.role !== 'assistant' || m !== WELCOME),
+          messages: [
+            ...prefsMsgs,
+            ...history.filter((m) => m.role !== 'assistant' || m !== WELCOME),
+          ],
           deals,
           passengers: adults,
           budget: nextBudget,
@@ -102,7 +145,7 @@ export default function AgentChat() {
     } finally {
       setLoading(false)
     }
-  }, [input, loading, messages, deals, adults, budget])
+  }, [input, loading, messages, deals, adults, budget, prefs])
 
   const onKeyDown = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -178,6 +221,25 @@ export default function AgentChat() {
                   </div>
                 )}
               </div>
+
+              <details className="agent-prefs" open={prefsOpen}
+                onToggle={(e) => setPrefsOpen(e.target.open)}>
+                <summary>Minhas preferências</summary>
+                <input
+                  className="agent-input"
+                  value={prefs.destinos_favoritos || ''}
+                  onChange={(e) => updatePref('destinos_favoritos', e.target.value)}
+                  placeholder="Europa, Lisboa, Buenos Aires"
+                  aria-label="Destinos de interesse"
+                />
+                <input
+                  className="agent-input"
+                  value={prefs.epoca_preferida || ''}
+                  onChange={(e) => updatePref('epoca_preferida', e.target.value)}
+                  placeholder="julho e agosto, férias escolares"
+                  aria-label="Época preferida"
+                />
+              </details>
 
               <div className="agent-input-row">
                 <input

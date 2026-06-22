@@ -154,3 +154,19 @@
   transition: opacity 0.18s ease;
 }
 .agent-send:disabled { opacity: 0.4; box-shadow: none; cursor: not-allowed; }
+
+.agent-prefs {
+  padding: 8px 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.agent-prefs summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 0;
+}
+.agent-prefs .agent-input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+}

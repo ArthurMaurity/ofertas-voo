@@ -57,3 +57,12 @@
   }
   .home-side .hscroll .deal-card { width: 100%; }
 }
+
+.home-stale {
+  margin: 10px 16px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #fef9c3;
+  color: #854d0e;
+  font-size: 13px;
+}

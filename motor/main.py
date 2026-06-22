@@ -19,6 +19,8 @@ Rode localmente com:  python main.py
 """
 
 from datetime import datetime, timezone, timedelta
+import urllib.parse
+import urllib.request
 
 import config
 import db
@@ -68,6 +70,19 @@ def link_aviasales(link_relativo):
     if not link_relativo:
         return None
     return "https://www.aviasales.com" + link_relativo
+
+
+def encurtar_link(url):
+    """Encurta via TinyURL (GET, sem auth). Se falhar, devolve o link original."""
+    if not url:
+        return url
+    try:
+        api = "https://tinyurl.com/api-create.php?" + urllib.parse.urlencode({"url": url})
+        with urllib.request.urlopen(api, timeout=10) as resp:
+            curto = resp.read().decode("utf-8").strip()
+        return curto if curto.startswith("http") else url
+    except Exception:
+        return url  # ponytail: link feio é melhor que link ausente
 
 
 def processar_mes(mes_ida, agora_iso):
@@ -141,7 +156,7 @@ def formatar_mensagem(alertas):
             f"• {a['destino']} ({a['regiao']}) — R$ {a['preco_brl']:.0f}"
             f"  [{motivo_txt}]"
             + (f"\n  ida {dep}" if dep else "")
-            + (f"\n  {link_aviasales(a['link'])}" if a.get("link") else "")
+            + (f"\n  🔗 {encurtar_link(link_aviasales(a['link']))}" if a.get("link") else "")
         )
     return "\n".join(linhas)
 

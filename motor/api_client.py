@@ -15,10 +15,34 @@ da companhia antes de comprar.
 
 import os
 import json
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
 import config
+
+# Backoff entre tentativas (s). len() define o nº máximo de tentativas.
+_BACKOFF = [5, 15, 30]
+
+
+def _get_json(req):
+    """GET com retry/backoff. Só retenta em erro de rede ou status 5xx."""
+    tentativas = len(_BACKOFF) + 1
+    for i in range(tentativas):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if e.code < 500 or i == tentativas - 1:
+                raise  # 4xx não adianta retentar; última tentativa propaga
+            espera, motivo = _BACKOFF[i], f"HTTP {e.code}"
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            if i == tentativas - 1:
+                raise
+            espera, motivo = _BACKOFF[i], str(e) or "erro de rede"
+        print(f"[api] Tentativa {i + 2}/{tentativas} após erro: {motivo}")
+        time.sleep(espera)
 
 BASE_URL = "https://api.travelpayouts.com/aviasales/v3/prices_for_dates"
 
@@ -55,8 +79,7 @@ def buscar_ofertas(mes_ida):
         "Accept-Encoding": "identity",  # evita gzip p/ simplicidade
     })
     try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            payload = json.loads(resp.read().decode("utf-8"))
+        payload = _get_json(req)
     except Exception as e:
         print(f"[api] Erro ao consultar mês {mes_ida}: {e}")
         return []

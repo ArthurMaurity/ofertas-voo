@@ -20,10 +20,17 @@ export default function Home() {
   const atualizado = generatedAt
     ? new Date(generatedAt).toLocaleString('pt-BR', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })
     : null
+  const horasAtras = generatedAt ? Math.floor((Date.now() - new Date(generatedAt)) / 3.6e6) : 0
 
   return (
     <div className="home">
       <MapHero origin={origin} deals={deals} />
+
+      {horasAtras > 24 && (
+        <p className="home-stale" role="status">
+          ⚠️ Dados de {horasAtras} horas atrás — próxima atualização em breve
+        </p>
+      )}
 
       <div className="home-side">
       <header className="home-head section-pad">
