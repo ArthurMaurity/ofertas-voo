@@ -41,7 +41,33 @@ def init_db():
             CREATE INDEX IF NOT EXISTS idx_rota
             ON observacoes (origem, destino, mes_ida)
         """)
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS notificacoes (
+                destino       TEXT NOT NULL,      -- IATA notificado
+                notificado_em TEXT NOT NULL       -- timestamp ISO do envio
+            )
+        """)
     print(f"[db] Banco pronto em {DB_PATH}")
+
+
+def destinos_em_cooldown(cooldown_horas):
+    """Conjunto de destinos notificados nas últimas `cooldown_horas`."""
+    limite = (datetime.utcnow() - timedelta(hours=cooldown_horas)).isoformat()
+    with conectar() as conn:
+        rows = conn.execute(
+            "SELECT DISTINCT destino FROM notificacoes WHERE notificado_em >= ?",
+            (limite,),
+        ).fetchall()
+    return {r["destino"] for r in rows}
+
+
+def registrar_notificacoes(destinos, agora_iso):
+    """Marca uma lista de destinos como notificados agora."""
+    with conectar() as conn:
+        conn.executemany(
+            "INSERT INTO notificacoes (destino, notificado_em) VALUES (?, ?)",
+            [(d, agora_iso) for d in destinos],
+        )
 
 
 def salvar_observacao(obs):

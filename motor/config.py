@@ -103,7 +103,10 @@ JANELA_MEDIA_DIAS = 30      # considera só os últimos N dias no cálculo da m�
 LIMITE_POR_MES = 100
 
 # Quantas ofertas, no máximo, notificar por execução (evita spam).
-MAX_ALERTAS_POR_RUN = 15
+MAX_ALERTAS_POR_RUN = 5
+
+# Não notifica o mesmo destino mais de 1x dentro desta janela (anti-spam).
+COOLDOWN_HORAS = 48
 
 # ---------------------------------------------------------------------------
 # EXPORTAÇÃO PARA O FRONTEND

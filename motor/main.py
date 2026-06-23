@@ -130,6 +130,9 @@ def processar_mes(mes_ida, agora_iso):
             norm["n_obs"] = n
             norm["por_teto"] = gatilho_teto
             norm["por_queda"] = gatilho_queda
+            norm["queda_pct"] = (
+                (media - norm["preco_brl"]) / media if (media and gatilho_queda) else 0.0
+            )
             alertas.append(norm)
 
     return alertas
@@ -139,9 +142,6 @@ def formatar_mensagem(alertas):
     """Monta o texto do WhatsApp a partir da lista de alertas."""
     agora = datetime.now(BRT).strftime("%d/%m %H:%M")
     linhas = [f"✈️ Ofertas saindo do Rio — {agora}", ""]
-
-    # Ordena por preço crescente e limita a quantidade.
-    alertas = sorted(alertas, key=lambda a: a["preco_brl"])[:config.MAX_ALERTAS_POR_RUN]
 
     for a in alertas:
         motivo = []
@@ -191,10 +191,30 @@ def main():
         print("[main] Nenhuma oferta bateu os gatilhos nesta execução.")
         return
 
-    mensagem = formatar_mensagem(todos_alertas)
+    # COOLDOWN: só destinos "frescos" (não notificados nas últimas N horas).
+    em_cooldown = db.destinos_em_cooldown(config.COOLDOWN_HORAS)
+    frescos = [a for a in todos_alertas if a["destino"] not in em_cooldown]
+    if len(frescos) < len(todos_alertas):
+        print(f"[main] {len(todos_alertas) - len(frescos)} destino(s) em cooldown, ignorados.")
+
+    # Prioriza QUEDA sobre só-TETO; dentro de cada grupo, maior queda % primeiro.
+    # Limita a quantidade enviada ao WhatsApp (anti-spam).
+    selecionados = sorted(
+        frescos,
+        key=lambda a: (not a["por_queda"], -a["queda_pct"]),
+    )[:config.MAX_ALERTAS_POR_RUN]
+
+    if not selecionados:
+        print("[main] Nada novo para notificar (tudo em cooldown).")
+        return
+
+    mensagem = formatar_mensagem(selecionados)
     print("[main] Mensagem montada:\n" + mensagem)
     enviados = notify.enviar_mensagem(mensagem)
     print(f"[main] Notificações enviadas: {enviados}")
+
+    # Registra os destinos notificados para o cooldown das próximas execuções.
+    db.registrar_notificacoes([a["destino"] for a in selecionados], agora_iso)
 
 
 if __name__ == "__main__":
