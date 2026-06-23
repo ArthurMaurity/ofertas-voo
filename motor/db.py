@@ -47,6 +47,10 @@ def init_db():
                 notificado_em TEXT NOT NULL       -- timestamp ISO do envio
             )
         """)
+        # Cooldown é de 48h; 7 dias de retenção é folga suficiente.
+        conn.execute(
+            "DELETE FROM notificacoes WHERE notificado_em < datetime('now', '-7 days')"
+        )
     print(f"[db] Banco pronto em {DB_PATH}")
 
 

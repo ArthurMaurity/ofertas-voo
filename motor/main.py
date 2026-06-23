@@ -213,8 +213,10 @@ def main():
     enviados = notify.enviar_mensagem(mensagem)
     print(f"[main] Notificações enviadas: {enviados}")
 
-    # Registra os destinos notificados para o cooldown das próximas execuções.
-    db.registrar_notificacoes([a["destino"] for a in selecionados], agora_iso)
+    # Só registra o cooldown se o envio realmente saiu; se falhou, os destinos
+    # continuam elegíveis na próxima execução.
+    if enviados > 0:
+        db.registrar_notificacoes([a["destino"] for a in selecionados], agora_iso)
 
 
 if __name__ == "__main__":
