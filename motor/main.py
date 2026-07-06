@@ -19,8 +19,14 @@ Rode localmente com:  python main.py
 """
 
 from datetime import datetime, timezone, timedelta
+import json
+import os
+import sys
 import urllib.parse
 import urllib.request
+
+# modulo_zarpo mora na raiz do repositório, um nível acima de motor/.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import config
 import db
@@ -85,57 +91,114 @@ def encurtar_link(url):
         return url  # ponytail: link feio é melhor que link ausente
 
 
+def avaliar_e_registrar(oferta, mes_ida, agora_iso):
+    """
+    Normaliza a oferta, salva no histórico e avalia os gatilhos.
+    Devolve o alerta (dict) ou None se a oferta não bateu gatilho/é inválida.
+    """
+    norm = avaliar_oferta(oferta)
+    if not norm:
+        return None
+
+    # 1) Média histórica ANTES de inserir a leitura atual.
+    media, n = db.media_historica(
+        config.ORIGEM, norm["destino"], mes_ida,
+        config.JANELA_MEDIA_DIAS, config.MIN_OBSERVACOES,
+    )
+
+    # 2) Salva a leitura atual no histórico.
+    db.salvar_observacao({
+        "coletado_em": agora_iso,
+        "origem": config.ORIGEM,
+        "destino": norm["destino"],
+        "pais": norm["pais"],
+        "regiao": norm["regiao"],
+        "mes_ida": mes_ida,
+        "preco_brl": norm["preco_brl"],
+        "moeda_origem": norm["moeda_origem"],
+        "departure_at": norm["departure_at"],
+        "return_at": norm["return_at"],
+        "airline": norm["airline"],
+        "link": norm["link"],
+    })
+
+    # 3) Avalia os dois gatilhos.
+    gatilho_teto = norm["preco_brl"] <= norm["teto"]
+    gatilho_queda = False
+    if media is not None:
+        limite_queda = media * (1 - config.QUEDA_PCT)
+        gatilho_queda = norm["preco_brl"] <= limite_queda
+
+    if not (gatilho_teto or gatilho_queda):
+        return None
+
+    norm["mes_ida"] = mes_ida
+    norm["media"] = round(media, 2) if media else None
+    norm["n_obs"] = n
+    norm["por_teto"] = gatilho_teto
+    norm["por_queda"] = gatilho_queda
+    norm["queda_pct"] = (
+        (media - norm["preco_brl"]) / media if (media and gatilho_queda) else 0.0
+    )
+    return norm
+
+
 def processar_mes(mes_ida, agora_iso):
     """Processa um mês e devolve a lista de alertas encontrados."""
     alertas = []
-    ofertas = api_client.buscar_ofertas(mes_ida)
-
-    for oferta in ofertas:
-        norm = avaliar_oferta(oferta)
-        if not norm:
-            continue
-
-        # 1) Média histórica ANTES de inserir a leitura atual.
-        media, n = db.media_historica(
-            config.ORIGEM, norm["destino"], mes_ida,
-            config.JANELA_MEDIA_DIAS, config.MIN_OBSERVACOES,
-        )
-
-        # 2) Salva a leitura atual no histórico.
-        db.salvar_observacao({
-            "coletado_em": agora_iso,
-            "origem": config.ORIGEM,
-            "destino": norm["destino"],
-            "pais": norm["pais"],
-            "regiao": norm["regiao"],
-            "mes_ida": mes_ida,
-            "preco_brl": norm["preco_brl"],
-            "moeda_origem": norm["moeda_origem"],
-            "departure_at": norm["departure_at"],
-            "return_at": norm["return_at"],
-            "airline": norm["airline"],
-            "link": norm["link"],
-        })
-
-        # 3) Avalia os dois gatilhos.
-        gatilho_teto = norm["preco_brl"] <= norm["teto"]
-        gatilho_queda = False
-        if media is not None:
-            limite_queda = media * (1 - config.QUEDA_PCT)
-            gatilho_queda = norm["preco_brl"] <= limite_queda
-
-        if gatilho_teto or gatilho_queda:
-            norm["mes_ida"] = mes_ida
-            norm["media"] = round(media, 2) if media else None
-            norm["n_obs"] = n
-            norm["por_teto"] = gatilho_teto
-            norm["por_queda"] = gatilho_queda
-            norm["queda_pct"] = (
-                (media - norm["preco_brl"]) / media if (media and gatilho_queda) else 0.0
-            )
-            alertas.append(norm)
-
+    for oferta in api_client.buscar_ofertas(mes_ida):
+        alerta = avaliar_e_registrar(oferta, mes_ida, agora_iso)
+        if alerta:
+            alertas.append(alerta)
     return alertas
+
+
+def processar_rotas(agora_iso):
+    """
+    Rotas de config.json com data exata (data_ida preenchida).
+    Rotas sem data já são cobertas pela busca mensal — pula sem erro.
+    """
+    alertas = []
+    for rota in config.ROTAS:
+        if not rota.get("data_ida"):
+            continue
+        oferta = api_client.buscar_rota_data(
+            rota.get("origem", config.ORIGEM), rota["destino"],
+            rota["data_ida"], rota.get("data_volta"),
+        )
+        if not oferta:
+            continue
+        alerta = avaliar_e_registrar(oferta, rota["data_ida"][:7], agora_iso)
+        if alerta:
+            alertas.append(alerta)
+    return alertas
+
+
+def coletar_hoteis():
+    """
+    Coleta preços de referência na Zarpo (SEQUENCIAL, Crawl-delay 10s do
+    robots.txt — não acelerar) e salva em data/hoteis.json.
+    """
+    if not config.ZARPO_ESTADOS:
+        return
+    import time
+    from dataclasses import asdict
+    import modulo_zarpo
+
+    hoteis = []
+    for estado in config.ZARPO_ESTADOS:
+        print(f"[zarpo] Coletando {estado}...")
+        try:
+            hoteis.extend(asdict(h) for h in modulo_zarpo.coletar_estado(estado))
+        except Exception as e:
+            print(f"[zarpo] Falha em {estado}: {e}")
+        time.sleep(modulo_zarpo.CRAWL_DELAY_SECONDS)
+
+    raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    destino = os.path.join(raiz, config.EXPORT_DIR, "hoteis.json")
+    with open(destino, "w", encoding="utf-8") as f:
+        json.dump(hoteis, f, ensure_ascii=False, indent=2)
+    print(f"[zarpo] {len(hoteis)} hotéis salvos em {destino}")
 
 
 def formatar_mensagem(alertas):
@@ -169,6 +232,14 @@ def main():
     todos_alertas = []
     for mes in config.MESES_IDA:
         todos_alertas.extend(processar_mes(mes, agora_iso))
+    todos_alertas.extend(processar_rotas(agora_iso))
+
+    # Hotéis (Zarpo) DEPOIS dos voos, sequencial — fonte diferente, mas
+    # mantém os rate-limits separados na mesma execução.
+    try:
+        coletar_hoteis()
+    except Exception as e:
+        print(f"[main] Falha na coleta Zarpo (segue sem hotéis): {e}")
 
     # Deduplica por destino, mantendo sempre a oferta mais barata.
     melhor_por_destino = {}

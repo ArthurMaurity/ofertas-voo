@@ -120,3 +120,26 @@ MAX_DEALS_EXPORT = 60
 
 # Quantos pontos, no máximo, manter por rota no history.json (sparkline).
 MAX_PONTOS_HISTORICO = 60
+
+# ---------------------------------------------------------------------------
+# CONFIG DINÂMICA (config.json na raiz do repositório)
+# ---------------------------------------------------------------------------
+# rotas: lista de {origem, destino, data_ida, data_volta}. Rotas com data_ida
+#        preenchida são consultadas na data exata (v1/prices/cheap); sem data,
+#        a rota já é coberta pela busca mensal "qualquer destino" acima.
+# zarpo_estados: slugs de estado coletados na Zarpo (data/hoteis.json).
+import json as _json
+import os as _os
+
+_CONFIG_JSON = _os.path.join(
+    _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "config.json"
+)
+try:
+    with open(_CONFIG_JSON, encoding="utf-8") as _f:
+        _cfg = _json.load(_f)
+except (FileNotFoundError, ValueError) as _e:
+    print(f"[config] config.json ausente/inválido ({_e}); usando defaults vazios.")
+    _cfg = {}
+
+ROTAS = _cfg.get("rotas", [])
+ZARPO_ESTADOS = _cfg.get("zarpo_estados", [])

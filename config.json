@@ -1,0 +1,6 @@
+{
+  "rotas": [
+    { "origem": "RIO", "destino": "SSA", "data_ida": "2026-08-10", "data_volta": "2026-08-17" }
+  ],
+  "zarpo_estados": ["sao-paulo", "rio-de-janeiro", "minas-gerais", "bahia"]
+}

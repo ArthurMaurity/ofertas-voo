@@ -19,6 +19,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import datetime, timedelta
 
 import config
 
@@ -91,6 +92,59 @@ def buscar_ofertas(mes_ida):
     dados = payload.get("data", []) or []
     print(f"[api] {mes_ida}: {len(dados)} ofertas recebidas.")
     return dados
+
+
+CHEAP_URL = "https://api.travelpayouts.com/v1/prices/cheap"
+
+
+def _shift(data, dias):
+    """Desloca 'YYYY-MM-DD' em N dias."""
+    return (datetime.strptime(data, "%Y-%m-%d") + timedelta(days=dias)).strftime("%Y-%m-%d")
+
+
+def buscar_rota_data(origem, destino, data_ida, data_volta=None):
+    """
+    Busca a rota na data exata via v1/prices/cheap.
+    O cache do Travelpayouts retorna vazio com frequência em data exata, então
+    tenta também +-1 e +-2 dias antes de desistir. Retorna a oferta mais barata
+    no mesmo formato de buscar_ofertas(), ou None.
+    """
+    for off in (0, 1, -1, 2, -2):
+        params = {
+            "origin": origem,
+            "destination": destino,
+            "depart_date": _shift(data_ida, off),
+            "currency": config.MOEDA,
+        }
+        if data_volta:
+            params["return_date"] = _shift(data_volta, off)
+        url = CHEAP_URL + "?" + urllib.parse.urlencode(params)
+        req = urllib.request.Request(url, headers={
+            "X-Access-Token": _token(),
+            "Accept-Encoding": "identity",
+        })
+        try:
+            payload = _get_json(req)
+        except Exception as e:
+            print(f"[api] Erro rota {origem}->{destino} ({off:+d}d): {e}")
+            continue
+        vos = payload.get("data", {}).get(destino) or {}
+        if not vos:
+            continue
+        v = min(vos.values(), key=lambda o: o.get("price", float("inf")))
+        if off:
+            print(f"[api] {origem}->{destino}: vazio na data exata, achou com {off:+d} dia(s).")
+        return {
+            "destination": destino,
+            "price": v.get("price"),
+            "currency": config.MOEDA,
+            "departure_at": v.get("departure_at"),
+            "return_at": v.get("return_at"),
+            "airline": v.get("airline"),
+            "link": None,
+        }
+    print(f"[api] {origem}->{destino} {data_ida}: sem oferta mesmo com +-2 dias.")
+    return None
 
 
 def converter_para_brl(preco, moeda_retornada):
