@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T08:22:26.299397-03:00",
+  "generated_at": "2026-08-19T18:22:48.749262-03:00",
   "origin": {
     "code": "RIO",
     "name": "Rio de Janeiro",
@@ -166,11 +166,11 @@
       "lat": 43.44884,
       "lon": 39.941105,
       "preco_atual": 11345.0,
-      "media": 11234.5,
+      "media": 11221.48,
       "min": 9101.0,
       "max": 12221.0,
       "queda_pct": 0.0,
-      "n_obs": 26,
+      "n_obs": 25,
       "serie": [
         {
           "t": "2026-07-02T22:02:49.952363",
@@ -518,11 +518,11 @@
       "lat": -10.987206,
       "lon": -37.072792,
       "preco_atual": 4990.0,
-      "media": 1907.69,
+      "media": 1988.27,
       "min": 977.0,
       "max": 4990.0,
       "queda_pct": 0.0,
-      "n_obs": 51,
+      "n_obs": 45,
       "serie": [
         {
           "t": "2026-07-03T12:52:38.525077",
@@ -945,12 +945,12 @@
       "regiao": "America do Sul",
       "lat": -25.241795,
       "lon": -57.513794,
-      "preco_atual": 1873.0,
-      "media": 2550.38,
+      "preco_atual": 2139.0,
+      "media": 2537.91,
       "min": 1332.0,
       "max": 4920.0,
-      "queda_pct": 26.6,
-      "n_obs": 32,
+      "queda_pct": 15.7,
+      "n_obs": 33,
       "serie": [
         {
           "t": "2026-06-20T01:02:17.907733",
@@ -1071,9 +1071,13 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 1873.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 2139.0
         }
       ],
-      "link": "https://www.aviasales.com/search/RIO1908ASU21081?t=LA17871366001787183700000785GIGBSBGRUASU17872809001787303400000375ASUGRUGIG_c299063906486b6b3e63b92e668f41ed_30191&search_date=13082026&expected_price_uuid=019ffab0-fc5a-8040-68c4-d48a4c951617&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=r4qXlJqaPXVd9BtyrCHY5Q&expected_price_source=share&expected_price_currency=brl&expected_price=1873"
+      "link": "https://www.aviasales.com/search/RIO2008ASU21081?t=JA17872131001787238900000430GIGAEPASU17872809001787349300001140ASUGRUSDU_216f2d9a9b2b743edf2ad10c41982b17_34481&search_date=13082026&expected_price_uuid=019ffab1-ce96-8040-a82a-638c1f0e0433&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bmaaiwp4f-PRPila-fjvpA&expected_price_source=share&expected_price_currency=brl&expected_price=2139"
     },
     "ATH": {
       "destino": "ATH",
@@ -1082,11 +1086,11 @@
       "lat": 37.93635,
       "lon": 23.946486,
       "preco_atual": 6040.0,
-      "media": 6665.98,
+      "media": 6656.02,
       "min": 6039.0,
       "max": 6569.0,
-      "queda_pct": 9.4,
-      "n_obs": 60,
+      "queda_pct": 9.3,
+      "n_obs": 57,
       "serie": [
         {
           "t": "2026-07-11T21:43:18.321517",
@@ -1510,11 +1514,11 @@
       "lat": 41.387917,
       "lon": 2.1699187,
       "preco_atual": 4763.0,
-      "media": 5532.77,
+      "media": 5512.59,
       "min": 4763.0,
       "max": 5742.0,
-      "queda_pct": 13.9,
-      "n_obs": 225,
+      "queda_pct": 13.6,
+      "n_obs": 214,
       "serie": [
         {
           "t": "2026-06-22T23:57:58.071703",
@@ -1734,11 +1738,11 @@
       "lat": -1.389865,
       "lon": -48.480003,
       "preco_atual": 2761.0,
-      "media": 2536.67,
+      "media": 2558.88,
       "min": 1617.0,
       "max": 3807.0,
       "queda_pct": 0.0,
-      "n_obs": 33,
+      "n_obs": 32,
       "serie": [
         {
           "t": "2026-07-12T11:54:07.232339",
@@ -2061,17 +2065,13 @@
       "regiao": "America do Sul",
       "lat": -19.9190677,
       "lon": -43.9385747,
-      "preco_atual": 804.0,
-      "media": 716.19,
+      "preco_atual": 1550.0,
+      "media": 725.88,
       "min": 549.0,
-      "max": 2224.0,
+      "max": 1550.0,
       "queda_pct": 0.0,
-      "n_obs": 97,
+      "n_obs": 96,
       "serie": [
-        {
-          "t": "2026-07-18T11:49:39.575769",
-          "p": 2224.0
-        },
         {
           "t": "2026-07-18T21:44:27.012972",
           "p": 692.0
@@ -2307,9 +2307,13 @@
         {
           "t": "2026-08-18T21:18:10.099091",
           "p": 804.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 1550.0
         }
       ],
-      "link": "https://www.aviasales.com/search/RIO2608BHZ28081?t=AD17877777001787781600000065GIGCNF17879598001787963700000065CNFGIG_f135b90782ddba4f81024d613e7586c1_12775&search_date=12082026&expected_price_uuid=019ff36f-f1ec-8040-2d30-4f0290759b56&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH1%7CR1%7CTBC0&itinerary_key=yS0XSFx6Cw5wF-KQLH_Vsg&expected_price_source=share&expected_price_currency=brl&expected_price=804"
+      "link": "https://www.aviasales.com/search/RIO2508BHZ27081?t=G317876790001787683200000070GIGCNF17878116001787815500000065CNFGIG_f143b6f55f9285910f556adea00e1f77_25346&search_date=19082026&expected_price_uuid=01a01ab6-066a-8040-649b-3bd1723c8af9&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=TmITcrj-bobrnHRbLEGQPw&expected_price_source=share&expected_price_currency=brl&expected_price=1550"
     },
     "BJS": {
       "destino": "BJS",
@@ -2458,11 +2462,11 @@
       "lat": 10.107936,
       "lon": -64.68589,
       "preco_atual": 11614.0,
-      "media": 8465.85,
+      "media": 8489.25,
       "min": 8184.0,
       "max": 11614.0,
       "queda_pct": 0.0,
-      "n_obs": 13,
+      "n_obs": 12,
       "serie": [
         {
           "t": "2026-07-19T21:45:43.330430",
@@ -2510,16 +2514,12 @@
       "lat": 4.698602,
       "lon": -74.143135,
       "preco_atual": 2546.0,
-      "media": 2601.09,
+      "media": 2599.56,
       "min": 2357.0,
       "max": 2949.0,
       "queda_pct": 2.1,
-      "n_obs": 35,
+      "n_obs": 36,
       "serie": [
-        {
-          "t": "2026-06-26T22:07:53.327650",
-          "p": 2840.0
-        },
         {
           "t": "2026-06-27T12:05:49.448667",
           "p": 2841.0
@@ -2755,6 +2755,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 2546.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 2546.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2008BOG23081?t=AV17872647001787311800000905GIGAEPBOG17875044001787580600001150BOGGRUGIG_7771b13195e84cfe35d3714c20846ffd_41539&search_date=18082026&expected_price_uuid=01a014fa-07cb-8030-acf2-f22bd7387120&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ITGmuDLaCurVsEJv6Iz0HA&expected_price_source=share&expected_price_currency=brl&expected_price=2546"
@@ -2766,11 +2770,11 @@
       "lat": 42.3584308,
       "lon": -71.0597732,
       "preco_atual": 4614.0,
-      "media": 4270.79,
+      "media": 4284.62,
       "min": 3297.0,
       "max": 4616.0,
       "queda_pct": 0.0,
-      "n_obs": 43,
+      "n_obs": 42,
       "serie": [
         {
           "t": "2026-07-06T16:47:03.071334",
@@ -3186,11 +3190,11 @@
       "lat": -41.145966,
       "lon": -71.16109,
       "preco_atual": 3487.0,
-      "media": 2295.67,
+      "media": 2321.1,
       "min": 1660.0,
       "max": 3487.0,
       "queda_pct": 0.0,
-      "n_obs": 21,
+      "n_obs": 20,
       "serie": [
         {
           "t": "2026-06-25T22:17:51.592341",
@@ -3698,16 +3702,12 @@
       "lat": -34.6084175,
       "lon": -58.3731613,
       "preco_atual": 1982.0,
-      "media": 1834.93,
+      "media": 1838.72,
       "min": 1199.0,
       "max": 1982.0,
       "queda_pct": 0.0,
       "n_obs": 433,
       "serie": [
-        {
-          "t": "2026-07-21T12:20:46.621807",
-          "p": 1268.0
-        },
         {
           "t": "2026-07-21T22:00:13.351436",
           "p": 1268.0
@@ -3943,6 +3943,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 1982.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 1982.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2108BUE28081?t=G317873166001787328900000205GIGEZE17879559001787966700000180AEPGIG_6619dd4a2f235e4bcba4ae6b1602d5f5_31907&search_date=14082026&expected_price_uuid=01a000a7-85c0-8030-e47e-e1fa7eb7a04f&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=pj5zlYn-XlPSw1D2QTZIAA&expected_price_source=share&expected_price_currency=brl&expected_price=1982"
@@ -3958,7 +3962,7 @@
       "min": 1988.0,
       "max": 2051.0,
       "queda_pct": 0.0,
-      "n_obs": 2,
+      "n_obs": 1,
       "serie": [
         {
           "t": "2026-07-14T12:06:47.035343",
@@ -4070,11 +4074,11 @@
       "lat": -15.651725,
       "lon": -56.120266,
       "preco_atual": 1724.0,
-      "media": 1764.62,
+      "media": 1835.44,
       "min": 1552.0,
       "max": 1724.0,
-      "queda_pct": 2.3,
-      "n_obs": 8,
+      "queda_pct": 6.1,
+      "n_obs": 9,
       "serie": [
         {
           "t": "2026-07-19T11:51:35.649978",
@@ -4107,6 +4111,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 1724.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 1724.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2508CGB05091?t=LA17876439001787673600000555SDUVCPCGB17885781001788645600001065CGBGRUSDU_4a7edb8f68c2dbe57218ab6de0a9ca1b_28045&search_date=18082026&expected_price_uuid=01a01618-c302-8040-6b4a-e55b3ce6cc3e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=coQeUPcFFUBwjs98jMSTZA&expected_price_source=share&expected_price_currency=brl&expected_price=1724"
@@ -4118,11 +4126,11 @@
       "lat": -20.456991,
       "lon": -54.668873,
       "preco_atual": 2043.0,
-      "media": 1681.82,
+      "media": 1711.35,
       "min": 820.0,
       "max": 4000.0,
       "queda_pct": 0.0,
-      "n_obs": 22,
+      "n_obs": 20,
       "serie": [
         {
           "t": "2026-07-13T21:51:28.924783",
@@ -4458,11 +4466,11 @@
       "lat": -19.01111,
       "lon": -57.672222,
       "preco_atual": 5144.0,
-      "media": 5146.8,
+      "media": 5144.0,
       "min": 1713.0,
       "max": 5172.0,
-      "queda_pct": 0.1,
-      "n_obs": 10,
+      "queda_pct": 0.0,
+      "n_obs": 9,
       "serie": [
         {
           "t": "2026-06-20T01:02:17.907733",
@@ -4814,11 +4822,11 @@
       "lat": 55.693403,
       "lon": 12.583046,
       "preco_atual": 6214.0,
-      "media": 6129.1,
+      "media": 6122.37,
       "min": 5873.0,
       "max": 6587.0,
       "queda_pct": 0.0,
-      "n_obs": 31,
+      "n_obs": 30,
       "serie": [
         {
           "t": "2026-07-05T12:11:02.449620",
@@ -5582,7 +5590,7 @@
       "min": 4034.0,
       "max": 4222.0,
       "queda_pct": 0.0,
-      "n_obs": 6,
+      "n_obs": 5,
       "serie": [
         {
           "t": "2026-06-20T01:02:17.907733",
@@ -6106,11 +6114,11 @@
       "lat": 32.802955,
       "lon": -96.769923,
       "preco_atual": 4643.0,
-      "media": 4643.0,
+      "media": null,
       "min": 4333.0,
       "max": 4693.0,
       "queda_pct": 0.0,
-      "n_obs": 5,
+      "n_obs": 4,
       "serie": [
         {
           "t": "2026-06-20T01:02:17.907733",
@@ -6322,11 +6330,11 @@
       "lat": 36.716667,
       "lon": 28.783333,
       "preco_atual": 8440.0,
-      "media": 8440.0,
+      "media": null,
       "min": 8440.0,
       "max": 8441.0,
       "queda_pct": 0.0,
-      "n_obs": 5,
+      "n_obs": 4,
       "serie": [
         {
           "t": "2026-07-15T21:54:32.405865",
@@ -6714,11 +6722,11 @@
       "lat": 40.15272,
       "lon": 44.39805,
       "preco_atual": 7549.0,
-      "media": 7348.83,
+      "media": 7379.53,
       "min": 5967.0,
       "max": 9677.0,
       "queda_pct": 0.0,
-      "n_obs": 46,
+      "n_obs": 45,
       "serie": [
         {
           "t": "2026-06-29T22:06:18.671009",
@@ -6922,11 +6930,11 @@
       "lat": -3.85,
       "lon": -32.416668,
       "preco_atual": 2348.0,
-      "media": 2372.8,
+      "media": 2369.63,
       "min": 1774.0,
       "max": 2438.0,
-      "queda_pct": 1.0,
-      "n_obs": 20,
+      "queda_pct": 0.9,
+      "n_obs": 19,
       "serie": [
         {
           "t": "2026-07-01T13:32:04.419283",
@@ -7202,16 +7210,12 @@
       "lat": -27.664446,
       "lon": -48.5452,
       "preco_atual": 1547.0,
-      "media": 1161.81,
+      "media": 1163.96,
       "min": 580.0,
       "max": 1547.0,
       "queda_pct": 0.0,
       "n_obs": 273,
       "serie": [
-        {
-          "t": "2026-07-19T11:51:35.649978",
-          "p": 961.0
-        },
         {
           "t": "2026-07-19T21:45:43.330430",
           "p": 961.0
@@ -7447,6 +7451,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 1547.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 1547.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO3108FLN04091?t=LA17881824001788204000000360GIGVCPFLN17885328001788595500001045FLNBSBSDU_4f5f8d2cdf6b565d1004e6fdb32b73cd_24705&search_date=13082026&expected_price_uuid=019ffc27-8af1-8040-a331-bd62bf64c8df&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=zRp-S-krUEQD_kFqWOxXtg&expected_price_source=share&expected_price_currency=brl&expected_price=1547"
@@ -7478,16 +7486,12 @@
       "lat": -3.779073,
       "lon": -38.540836,
       "preco_atual": 2504.0,
-      "media": 1620.85,
+      "media": 1633.96,
       "min": 881.0,
       "max": 2576.0,
       "queda_pct": 0.0,
       "n_obs": 113,
       "serie": [
-        {
-          "t": "2026-07-21T12:20:46.621807",
-          "p": 1023.0
-        },
         {
           "t": "2026-07-21T22:00:13.351436",
           "p": 1023.0
@@ -7723,6 +7727,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 2504.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 2504.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2208FOR24081?t=AD17873979001787418600000345SDUVCPFOR17875389001787550900000200FORGIG_24820806dfe793d1c0e042fea2f5c81c_40897&search_date=17082026&expected_price_uuid=01a010d3-c328-8030-a32b-78dc1e484d30&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=nVojB-TK6NU8fQ0KJ1PlAQ&expected_price_source=share&expected_price_currency=brl&expected_price=2504"
@@ -7901,12 +7909,12 @@
       "regiao": "America do Sul",
       "lat": -50.284225,
       "lon": -72.053696,
-      "preco_atual": 4001.0,
+      "preco_atual": 3964.0,
       "media": null,
       "min": 2478.0,
       "max": 4001.0,
       "queda_pct": 0.0,
-      "n_obs": 1,
+      "n_obs": 2,
       "serie": [
         {
           "t": "2026-06-20T01:02:17.907733",
@@ -7979,9 +7987,13 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 4001.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 3964.0
         }
       ],
-      "link": "https://www.aviasales.com/search/RIO2408FTE28081?t=AR17875335001787581800000805GIGAEPFTE17879358001788007500001195FTEEZEAEPGIG_140286ceb443505cbc9309809bc8be1b_65305&search_date=19082026&expected_price_uuid=01a0194d-429d-8030-2623-480675ed2362&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4N_ms1mlZxUhXgHzUn1jLg&expected_price_source=share&expected_price_currency=brl&expected_price=4001"
+      "link": "https://www.aviasales.com/search/RIO2408FTE28081?t=AR17875335001787581800000805GIGAEPFTE17879358001788007500001195FTEEZEAEPGIG_140286ceb443505cbc9309809bc8be1b_65305&search_date=19082026&expected_price_uuid=01a0194d-429d-8030-2623-480675ed2362&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4N_ms1mlZxUhXgHzUn1jLg&expected_price_source=share&expected_price_currency=brl&expected_price=3964"
     },
     "GDN": {
       "destino": "GDN",
@@ -8474,11 +8486,11 @@
       "lat": 36.2993,
       "lon": 32.3014,
       "preco_atual": 8228.0,
-      "media": 10076.07,
+      "media": 10076.12,
       "min": 8227.0,
       "max": 8228.0,
       "queda_pct": 18.3,
-      "n_obs": 28,
+      "n_obs": 32,
       "serie": [
         {
           "t": "2026-08-16T11:14:29.329734",
@@ -8506,6 +8518,10 @@
         },
         {
           "t": "2026-08-19T11:19:26.855665",
+          "p": 8228.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
           "p": 8228.0
         }
       ],
@@ -8922,16 +8938,12 @@
       "lat": -25.597937,
       "lon": -54.488823,
       "preco_atual": 2348.0,
-      "media": 1899.44,
+      "media": 1911.36,
       "min": 934.0,
       "max": 2553.0,
       "queda_pct": 0.0,
-      "n_obs": 479,
+      "n_obs": 473,
       "serie": [
-        {
-          "t": "2026-07-21T12:20:46.621807",
-          "p": 1251.0
-        },
         {
           "t": "2026-07-21T22:00:13.351436",
           "p": 1251.0
@@ -9167,6 +9179,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 2348.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 2348.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2408IGU26081?t=G317876082001787616300000135GIGIGU17877576001787783100000425IGUVCPSDU_e80f45b16f81746bae8b796180c194ad_38354&search_date=17082026&expected_price_uuid=01a01200-c48b-8030-a826-ce05b603ca03&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sZog5EjdQUevzISfe2TUTg&expected_price_source=share&expected_price_currency=brl&expected_price=2348"
@@ -9178,11 +9194,11 @@
       "lat": -14.813889,
       "lon": -39.03,
       "preco_atual": 1908.0,
-      "media": 1448.24,
+      "media": 1449.29,
       "min": 1157.0,
       "max": 1908.0,
       "queda_pct": 0.0,
-      "n_obs": 92,
+      "n_obs": 89,
       "serie": [
         {
           "t": "2026-07-21T12:20:46.621807",
@@ -9427,6 +9443,26 @@
       ],
       "link": "https://www.aviasales.com/search/RIO2108IOS05091?t=LA17873472001787401500000905SDUBSBGRUIOS17886183001788624900000110IOSGIG_c86d0c6194bf79892c84ca6b827ec3e8_30533&search_date=12082026&expected_price_uuid=019ff5e3-03fe-8040-aa85-85b2cf568558&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=YVHGCr0-K_ndtXZYD0W_fg&expected_price_source=share&expected_price_currency=brl&expected_price=1908"
     },
+    "IPC": {
+      "destino": "IPC",
+      "cidade": "Easter Island",
+      "regiao": "America do Sul",
+      "lat": -27.116667,
+      "lon": -109.36667,
+      "preco_atual": 6988.0,
+      "media": null,
+      "min": 6988.0,
+      "max": 6988.0,
+      "queda_pct": 0.0,
+      "n_obs": 2,
+      "serie": [
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 6988.0
+        }
+      ],
+      "link": "https://www.aviasales.com/search/RIO1908IPC21081?t=LA17871741001787314200002515GIGAEPSCLIPC17873304001787393700000875IPCSCLGIG_ca1b5090191970c625cef1f439164b68_112429&search_date=16082026&expected_price_uuid=01a00ca3-b3f5-8040-68a6-80e0af0a3e10&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=UkGYAkr2GW47dil77pxe7Q&expected_price_source=share&expected_price_currency=brl&expected_price=6988"
+    },
     "IST": {
       "destino": "IST",
       "cidade": "Istanbul",
@@ -9434,11 +9470,11 @@
       "lat": 40.976665,
       "lon": 28.815277,
       "preco_atual": 7839.0,
-      "media": 7651.73,
+      "media": 7663.44,
       "min": 6579.0,
       "max": 8584.0,
       "queda_pct": 0.0,
-      "n_obs": 15,
+      "n_obs": 16,
       "serie": [
         {
           "t": "2026-07-01T13:32:04.419283",
@@ -9534,6 +9570,10 @@
         },
         {
           "t": "2026-08-19T11:19:26.855665",
+          "p": 7839.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
           "p": 7839.0
         }
       ],
@@ -9713,11 +9753,11 @@
       "regiao": "America do Sul",
       "lat": -26.233334,
       "lon": -48.783333,
-      "preco_atual": 1659.0,
-      "media": 1924.17,
+      "preco_atual": 2590.0,
+      "media": 1978.14,
       "min": 1017.0,
-      "max": 1663.0,
-      "queda_pct": 13.8,
+      "max": 2590.0,
+      "queda_pct": 0.0,
       "n_obs": 29,
       "serie": [
         {
@@ -9835,9 +9875,13 @@
         {
           "t": "2026-08-16T11:14:29.329734",
           "p": 1659.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 2590.0
         }
       ],
-      "link": "https://www.aviasales.com/search/RIO2608JOI27081?t=AD17877654001787778300000215SDUCGHJOI17878290001787854800000430JOIVCPSDU_b2043ba3c0f7c8bdb71c0965ffa3e77e_26620&search_date=09082026&expected_price_uuid=019fe651-1c95-8030-267f-f1185dc8da16&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2rZb1IH3PgtDNiHiHIBkYw&expected_price_source=share&expected_price_currency=brl&expected_price=1659"
+      "link": "https://www.aviasales.com/search/RIO2708JOI29081?t=G317878182001787830200000200SDUCGHJOI17880048001788076500001195JOICGHSDU_42250be825e4551305f22f3bcbd8cf37_42337&search_date=19082026&expected_price_uuid=01a01aaf-b964-8050-2089-100ebb9b16ed&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=h7afzLnq0lGo68VsE-oS1g&expected_price_source=share&expected_price_currency=brl&expected_price=2590"
     },
     "JPA": {
       "destino": "JPA",
@@ -9846,16 +9890,12 @@
       "lat": -7.145357,
       "lon": -34.94816,
       "preco_atual": 2272.0,
-      "media": 1564.55,
+      "media": 1579.04,
       "min": 1092.0,
       "max": 2272.0,
       "queda_pct": 0.0,
-      "n_obs": 136,
+      "n_obs": 133,
       "serie": [
-        {
-          "t": "2026-07-21T12:20:46.621807",
-          "p": 1092.0
-        },
         {
           "t": "2026-07-21T22:00:13.351436",
           "p": 1092.0
@@ -10091,6 +10131,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 2272.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 2272.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2708JPA28081?t=AD17878500001787880600000510GIGVCPJPA17879169001788008100001520JPACNFSDU_b873daebed6c5e33bc97b7560acbbe8e_36543&search_date=16082026&expected_price_uuid=01a008b6-ecf7-8040-2cbe-fb23da2e1b26&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=LqtdvogChnbENORpg3EREg&expected_price_source=share&expected_price_currency=brl&expected_price=2272"
@@ -10126,11 +10170,11 @@
       "lat": 54.882656,
       "lon": 20.586645,
       "preco_atual": 13990.0,
-      "media": 13989.83,
+      "media": 13989.86,
       "min": 13989.0,
       "max": 13990.0,
       "queda_pct": 0.0,
-      "n_obs": 6,
+      "n_obs": 7,
       "serie": [
         {
           "t": "2026-08-16T21:14:04.688060",
@@ -10154,6 +10198,10 @@
         },
         {
           "t": "2026-08-19T11:19:26.855665",
+          "p": 13990.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
           "p": 13990.0
         }
       ],
@@ -10461,12 +10509,12 @@
       "regiao": "Europa",
       "lat": 59.939039,
       "lon": 30.315785,
-      "preco_atual": 25829.0,
-      "media": 10044.65,
+      "preco_atual": 11006.0,
+      "media": 10064.27,
       "min": 8876.0,
       "max": 25829.0,
       "queda_pct": 0.0,
-      "n_obs": 48,
+      "n_obs": 49,
       "serie": [
         {
           "t": "2026-06-20T01:02:17.907733",
@@ -10695,9 +10743,13 @@
         {
           "t": "2026-08-15T21:15:42.497731",
           "p": 25829.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 11006.0
         }
       ],
-      "link": "https://www.aviasales.com/search/RIO1508LED30081?t=TK17868246001786942500001605SDUGRUISTLED17880552001788122700001485LEDSAWISTGRUGIG_ba70e3cb87db7a8f74405d1952d98cc5_412508&search_date=13082026&expected_price_uuid=019ffd64-74cd-8030-afe7-16615df0a384&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=QJHD4meDegujiPq4WGc59A&expected_price_source=share&expected_price_currency=brl&expected_price=25829"
+      "link": "https://www.aviasales.com/search/RIO2908LED23101?t=AD17880309001788331800004655GIGMADCMNLED17927364001792887900002885LEDSAWMADVCPGIG_833f047c71eb4a6651d62b9f051df20a_178804&search_date=19082026&expected_price_uuid=01a01b07-3005-8040-2684-01cd4aa2df01&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=8vFdrNAzFmj3X1c_jujO1Q&expected_price_source=share&expected_price_currency=brl&expected_price=11006"
     },
     "LIM": {
       "destino": "LIM",
@@ -10962,16 +11014,12 @@
       "lat": 38.706932,
       "lon": -9.1356321,
       "preco_atual": 6330.0,
-      "media": 5581.92,
+      "media": 5584.08,
       "min": 4486.0,
       "max": 6331.0,
       "queda_pct": 0.0,
       "n_obs": 75,
       "serie": [
-        {
-          "t": "2026-07-13T21:51:28.924783",
-          "p": 4486.0
-        },
         {
           "t": "2026-07-14T12:06:47.035343",
           "p": 4486.0
@@ -11207,6 +11255,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 6330.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 6330.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2608LIS10091?t=KL17877816001787869500001225GIGCDGLIS17890164001789069500001125LISAMSGIG_1450074521d290a294aac33f70b6231a_103310&search_date=18082026&expected_price_uuid=01a01458-2212-8030-28e0-453cee629cc3&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=hHbnm7pgGlf9760UQQxAYg&expected_price_source=share&expected_price_currency=brl&expected_price=6330"
@@ -11217,11 +11269,11 @@
       "regiao": "Europa",
       "lat": 51.51,
       "lon": 0.06,
-      "preco_atual": 4613.0,
-      "media": 5448.4,
+      "preco_atual": 7097.0,
+      "media": 5477.51,
       "min": 4574.0,
-      "max": 5496.0,
-      "queda_pct": 15.3,
+      "max": 7097.0,
+      "queda_pct": 0.0,
       "n_obs": 55,
       "serie": [
         {
@@ -11347,9 +11399,13 @@
         {
           "t": "2026-08-02T21:50:22.858051",
           "p": 4613.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 7097.0
         }
       ],
-      "link": "https://www.aviasales.com/search/RIO1708LON31081?t=G317870037001787069700000860GIGAMSLHR17881656001788205500000905LHRAMSGIG_7dc7e6807ae38e30f866314f2bf4fc5b_69981&search_date=27072026&expected_price_uuid=019fa248-9c92-8030-6e86-245c8dbe3d55&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=df2TOYR1TJrNjQeYcJg9JA&expected_price_source=share&expected_price_currency=brl&expected_price=4613"
+      "link": "https://www.aviasales.com/search/RIO2808LON11091?t=AD17879073001788070800002485GIGGRUJFKLGW17891640001789259100001825STNBGYMADVCPGIG_e47d2bf4b4ddd3e738c30c59c3ebb335_115300&search_date=19082026&expected_price_uuid=01a01bb2-c580-8030-64ff-9dd4adc86587&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=uyYkkPdDH0e5wbew4ejPvQ&expected_price_source=share&expected_price_currency=brl&expected_price=7097"
     },
     "LPB": {
       "destino": "LPB",
@@ -11526,11 +11582,11 @@
       "lat": 40.4166909,
       "lon": -3.7003454,
       "preco_atual": 6470.0,
-      "media": 5269.18,
+      "media": 5290.47,
       "min": 4115.0,
       "max": 6470.0,
       "queda_pct": 0.0,
-      "n_obs": 60,
+      "n_obs": 58,
       "serie": [
         {
           "t": "2026-07-07T13:14:18.750121",
@@ -11782,16 +11838,12 @@
       "lat": -3.031327,
       "lon": -60.046093,
       "preco_atual": 4859.0,
-      "media": 1973.24,
+      "media": 1998.97,
       "min": 1550.0,
       "max": 4859.0,
       "queda_pct": 0.0,
       "n_obs": 109,
       "serie": [
-        {
-          "t": "2026-07-05T21:57:04.210490",
-          "p": 2588.0
-        },
         {
           "t": "2026-07-06T14:21:33.138744",
           "p": 2588.0
@@ -12027,6 +12079,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 4859.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 4859.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2008MAO24081?t=AD17872593001787298300000710GIGCNFBELMAO17876001001787643900000670MAOBELVCPGIG_4fff592dd97a195efe209a3dc6e72a9f_79329&search_date=18082026&expected_price_uuid=01a01548-4f0f-8030-671a-011608d73ebb&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=7Ka54wsdLfKPW12Ui4HImA&expected_price_source=share&expected_price_currency=brl&expected_price=4859"
@@ -12062,11 +12118,11 @@
       "lat": -9.512521,
       "lon": -35.800446,
       "preco_atual": 4126.0,
-      "media": 2208.29,
+      "media": 2247.04,
       "min": 1047.0,
       "max": 4126.0,
       "queda_pct": 0.0,
-      "n_obs": 24,
+      "n_obs": 23,
       "serie": [
         {
           "t": "2026-06-26T13:06:33.992678",
@@ -12742,7 +12798,7 @@
       "min": 1775.0,
       "max": 2975.0,
       "queda_pct": 0.0,
-      "n_obs": 11,
+      "n_obs": 12,
       "serie": [
         {
           "t": "2026-07-13T21:51:28.924783",
@@ -12791,6 +12847,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 1775.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 1775.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2008MGF27081?t=LA17872083001787233500000420SDUCGHGRUMGF17878413001787868000000445MGFGRUSDU_c49840e9ab3c32c21da1e45670eefbd7_28351&search_date=13082026&expected_price_uuid=019ffd83-2d2d-8040-68fe-ebc084ef752b&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OvRXdB9XQkHcMSSy3Bp3Iw&expected_price_source=share&expected_price_currency=brl&expected_price=1775"
@@ -12802,11 +12862,11 @@
       "lat": 25.7889689,
       "lon": -80.2264393,
       "preco_atual": 3321.0,
-      "media": 3658.3,
+      "media": 3654.16,
       "min": 3272.0,
       "max": 4026.0,
-      "queda_pct": 9.2,
-      "n_obs": 40,
+      "queda_pct": 9.1,
+      "n_obs": 38,
       "serie": [
         {
           "t": "2026-07-06T16:47:03.071334",
@@ -13386,16 +13446,12 @@
       "lat": 55.755786,
       "lon": 37.617633,
       "preco_atual": 10085.0,
-      "media": 10315.14,
+      "media": 10328.94,
       "min": 8793.0,
       "max": 10085.0,
-      "queda_pct": 2.2,
-      "n_obs": 262,
+      "queda_pct": 2.4,
+      "n_obs": 265,
       "serie": [
-        {
-          "t": "2026-07-12T11:54:07.232339",
-          "p": 8793.0
-        },
         {
           "t": "2026-07-12T21:43:11.725484",
           "p": 8793.0
@@ -13631,6 +13687,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 10085.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 10085.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2108MOW29081?t=LA17872929001787457900002390SDUGRUMADESBVKO17879799001788111300002550VKOESBMADGIG_60c48b2a78e6be98b8e48ffddc0925e6_163028&search_date=13082026&expected_price_uuid=019ffb1f-7892-8051-2d6b-18a116a7b3f1&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=YBhfHu4E7uFuFdE9Zv3zeA&expected_price_source=share&expected_price_currency=brl&expected_price=10085"
@@ -13714,11 +13774,11 @@
       "lat": -34.8836111,
       "lon": -56.1819444,
       "preco_atual": 1176.0,
-      "media": 1330.82,
+      "media": 1333.19,
       "min": 930.0,
       "max": 7709.0,
-      "queda_pct": 11.6,
-      "n_obs": 50,
+      "queda_pct": 11.8,
+      "n_obs": 53,
       "serie": [
         {
           "t": "2026-07-04T21:53:51.444332",
@@ -13954,6 +14014,10 @@
         },
         {
           "t": "2026-08-19T11:19:26.855665",
+          "p": 1176.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
           "p": 1176.0
         }
       ],
@@ -14370,11 +14434,11 @@
       "lat": -26.866667,
       "lon": -48.63333,
       "preco_atual": 1272.0,
-      "media": 1242.38,
+      "media": 1245.86,
       "min": 834.0,
       "max": 1566.0,
       "queda_pct": 0.0,
-      "n_obs": 71,
+      "n_obs": 70,
       "serie": [
         {
           "t": "2026-07-14T12:06:47.035343",
@@ -14626,11 +14690,11 @@
       "lat": 40.7143528,
       "lon": -74.0059731,
       "preco_atual": 4933.0,
-      "media": 4469.43,
+      "media": 4483.14,
       "min": 3084.0,
       "max": 5985.0,
       "queda_pct": 0.0,
-      "n_obs": 44,
+      "n_obs": 43,
       "serie": [
         {
           "t": "2026-07-06T22:09:34.332247",
@@ -14881,19 +14945,23 @@
       "regiao": "Europa",
       "lat": 43.2,
       "lon": 44.6,
-      "preco_atual": 11610.0,
+      "preco_atual": 11504.0,
       "media": null,
-      "min": 11610.0,
+      "min": 11504.0,
       "max": 11610.0,
       "queda_pct": 0.0,
-      "n_obs": 1,
+      "n_obs": 2,
       "serie": [
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 11610.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 11504.0
         }
       ],
-      "link": "https://www.aviasales.com/search/RIO2608OGZ01091?t=AZ17877729001788031200003945GIGGRUCPTDXBSAWISTOGZ17882634001788411900002835OGZISTTUNFCOGIG_2f7107fc644317b77fdce2951df71599_189893&search_date=19082026&expected_price_uuid=01a0198c-c898-8051-2701-247ea1c50b94&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=JzpsZsoryCKYH8tJJ87bdQ&expected_price_source=share&expected_price_currency=brl&expected_price=11610"
+      "link": "https://www.aviasales.com/search/RIO2608OGZ01091?t=AZ17877729001788031200003945GIGGRUCPTDXBSAWISTOGZ17882634001788411900002835OGZISTTUNFCOGIG_2f7107fc644317b77fdce2951df71599_189893&search_date=19082026&expected_price_uuid=01a0198c-c898-8051-2701-247ea1c50b94&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=JzpsZsoryCKYH8tJJ87bdQ&expected_price_source=share&expected_price_currency=brl&expected_price=11504"
     },
     "OPO": {
       "destino": "OPO",
@@ -14902,11 +14970,11 @@
       "lat": 41.149968,
       "lon": -8.6102426,
       "preco_atual": 5638.0,
-      "media": 5799.92,
+      "media": 5817.26,
       "min": 4725.0,
       "max": 6014.0,
-      "queda_pct": 2.8,
-      "n_obs": 63,
+      "queda_pct": 3.1,
+      "n_obs": 62,
       "serie": [
         {
           "t": "2026-07-08T22:01:39.350051",
@@ -15162,7 +15230,7 @@
       "min": 2718.0,
       "max": 5804.0,
       "queda_pct": 0.0,
-      "n_obs": 4,
+      "n_obs": 3,
       "serie": [
         {
           "t": "2026-06-28T12:14:04.740770",
@@ -15418,7 +15486,7 @@
       "min": 12074.0,
       "max": 12078.0,
       "queda_pct": 0.0,
-      "n_obs": 1,
+      "n_obs": 0,
       "serie": [
         {
           "t": "2026-07-14T21:53:55.639155",
@@ -15862,11 +15930,11 @@
       "lat": -51.683334,
       "lon": -72.51667,
       "preco_atual": 3738.0,
-      "media": 3638.0,
+      "media": 3641.47,
       "min": 2634.0,
       "max": 3738.0,
       "queda_pct": 0.0,
-      "n_obs": 16,
+      "n_obs": 15,
       "serie": [
         {
           "t": "2026-06-22T23:57:58.071703",
@@ -16089,12 +16157,12 @@
       "regiao": "America do Sul",
       "lat": -29.98961,
       "lon": -51.17709,
-      "preco_atual": 1890.0,
-      "media": 963.82,
+      "preco_atual": 3558.0,
+      "media": 1053.28,
       "min": 492.0,
-      "max": 1893.0,
+      "max": 3558.0,
       "queda_pct": 0.0,
-      "n_obs": 28,
+      "n_obs": 29,
       "serie": [
         {
           "t": "2026-06-20T01:02:17.907733",
@@ -16319,9 +16387,13 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 1890.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 3558.0
         }
       ],
-      "link": "https://www.aviasales.com/search/RIO1908POA27081?t=AD17871471001787163600000275SDUGRUPOA17878437001787862600000315POAVCPSDU_fe8b6ab439d74107f9d63b8576d5c80b_30872&search_date=17082026&expected_price_uuid=01a01098-0ed0-8040-6788-994da8569255&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_BpDJBAfoUUvqH9Va_dhfg&expected_price_source=share&expected_price_currency=brl&expected_price=1890"
+      "link": "https://www.aviasales.com/search/RIO1908POA27081?t=LA17871777001787184900000120GIGPOA17878251001787868000000715POAGRUSDU_551b17004e807fd697a0ca003f52784d_58106&search_date=17082026&expected_price_uuid=01a01098-0ed0-8040-6788-994da8569255&static_fare_key=TY%7CP0%7CH0%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=3FEuov2zRgDmGTKMz39wpg&expected_price_source=share&expected_price_currency=brl&expected_price=3558"
     },
     "POP": {
       "destino": "POP",
@@ -16794,7 +16866,7 @@
       "min": 8858.0,
       "max": 8858.0,
       "queda_pct": 0.0,
-      "n_obs": 6,
+      "n_obs": 5,
       "serie": [
         {
           "t": "2026-07-20T13:01:34.870435",
@@ -16822,6 +16894,26 @@
         }
       ],
       "link": "https://www.aviasales.com/search/RIO0308RAI09081?t=TP17857872001785885000001510GIGLISRAI17862783001786339200001135RAILISGIG_7162becf5fe481d807a3fe455d30faf8_134279&search_date=16072026&expected_price_uuid=019f6880-d5fc-8010-29a3-6ca0687be8f3&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=cP6qrsvfS7poacnC2Jn0pg&expected_price_source=share&expected_price_currency=brl&expected_price=8858"
+    },
+    "RAO": {
+      "destino": "RAO",
+      "cidade": "Ribeirao Preto",
+      "regiao": "America do Sul",
+      "lat": -21.135834,
+      "lon": -47.773335,
+      "preco_atual": 4632.0,
+      "media": null,
+      "min": 4632.0,
+      "max": 4632.0,
+      "queda_pct": 0.0,
+      "n_obs": 1,
+      "serie": [
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 4632.0
+        }
+      ],
+      "link": "https://www.aviasales.com/search/RIO1908RAO20081?t=LA17871708001787216400000760GIGCWBCGHRAO17872449001787257800000215RAOVCPSDU_35e188157e136f4d3517349d40b3e3fb_76148&search_date=19082026&expected_price_uuid=01a01a69-801f-8040-22e9-193abee99be3&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ejNncaWUBKlGEYSO4ynNCg&expected_price_source=share&expected_price_currency=brl&expected_price=4632"
     },
     "RBA": {
       "destino": "RBA",
@@ -16862,7 +16954,7 @@
       "min": 1878.0,
       "max": 2783.0,
       "queda_pct": 0.0,
-      "n_obs": 14,
+      "n_obs": 13,
       "serie": [
         {
           "t": "2026-06-20T01:02:17.907733",
@@ -17082,16 +17174,12 @@
       "lat": -8.131507,
       "lon": -34.91792,
       "preco_atual": 1681.0,
-      "media": 1710.38,
-      "min": 1043.0,
+      "media": 1722.11,
+      "min": 1128.0,
       "max": 2743.0,
-      "queda_pct": 1.7,
-      "n_obs": 211,
+      "queda_pct": 2.4,
+      "n_obs": 210,
       "serie": [
-        {
-          "t": "2026-07-20T21:57:08.754817",
-          "p": 1043.0
-        },
         {
           "t": "2026-07-21T12:20:46.621807",
           "p": 1128.0
@@ -17327,6 +17415,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 1681.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 1681.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2908REC31081?t=AD17880147001788078300001060GIGCNFREC17881467001788180000000555RECVCPGIG_6235aa924419bede91dba1771c3d8d2e_27037&search_date=15082026&expected_price_uuid=01a0048d-aff7-8040-6a15-670f0056b0a9&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=854M5CkzeQgSEBqbE1UwyQ&expected_price_source=share&expected_price_currency=brl&expected_price=1681"
@@ -17370,11 +17462,11 @@
       "lat": 41.8905198,
       "lon": 12.4942486,
       "preco_atual": 6013.0,
-      "media": 6216.73,
+      "media": 6203.82,
       "min": 5331.0,
       "max": 6824.0,
-      "queda_pct": 3.3,
-      "n_obs": 45,
+      "queda_pct": 3.1,
+      "n_obs": 44,
       "serie": [
         {
           "t": "2026-07-06T22:09:34.332247",
@@ -17849,17 +17941,13 @@
       "regiao": "America do Sul",
       "lat": -23.63,
       "lon": -46.66,
-      "preco_atual": 799.0,
-      "media": 998.02,
+      "preco_atual": 1106.0,
+      "media": 1009.07,
       "min": 315.0,
-      "max": 799.0,
-      "queda_pct": 19.9,
-      "n_obs": 694,
+      "max": 1106.0,
+      "queda_pct": 0.0,
+      "n_obs": 689,
       "serie": [
-        {
-          "t": "2026-07-21T12:20:46.621807",
-          "p": 416.0
-        },
         {
           "t": "2026-07-21T22:00:13.351436",
           "p": 346.0
@@ -18095,9 +18183,13 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 799.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 1106.0
         }
       ],
-      "link": "https://www.aviasales.com/search/RIO2908SAO29081?t=G317879919001787996400000075GIGVCP17880315001788035700000070VCPGIG_ba76fe3e3a7e3fda70c07f6a177aa5c5_12776&search_date=12082026&expected_price_uuid=019ff747-a6dd-8040-2e51-bb6c0d0fa011&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sajgw6kOOdb3fsEmirCDgw&expected_price_source=share&expected_price_currency=brl&expected_price=799"
+      "link": "https://www.aviasales.com/search/RIO2408SAO31081?t=AD17876040001787608500000075GIGVCP17882184001788222300000065VCPGIG_481a09f3876eaa42f06266d53b570aba_18010&search_date=18082026&expected_price_uuid=01a012a0-ca06-8040-6bee-1d41dd4a7dbb&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ADMhw9eFTYKSQkUD8ZzZPg&expected_price_source=share&expected_price_currency=brl&expected_price=1106"
     },
     "SCL": {
       "destino": "SCL",
@@ -18106,11 +18198,11 @@
       "lat": -33.4166667,
       "lon": -70.55,
       "preco_atual": 2152.0,
-      "media": 1485.52,
+      "media": 1493.1,
       "min": 1129.0,
       "max": 2157.0,
       "queda_pct": 0.0,
-      "n_obs": 71,
+      "n_obs": 69,
       "serie": [
         {
           "t": "2026-07-14T21:53:55.639155",
@@ -19086,11 +19178,11 @@
       "lat": 40.520832,
       "lon": 22.972221,
       "preco_atual": 9123.0,
-      "media": null,
+      "media": 9122.4,
       "min": 9120.0,
       "max": 9123.0,
       "queda_pct": 0.0,
-      "n_obs": 4,
+      "n_obs": 5,
       "serie": [
         {
           "t": "2026-08-17T21:20:17.604645",
@@ -19107,6 +19199,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 9123.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 9123.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2808SKG13091?t=KL17879541001788096600002015GIGAMSSKG17893344001789415100001705SKGAMSGIG_ffbdf2cc8d3f4a963a29c63d7dc54d11_149042&search_date=17082026&expected_price_uuid=01a00ffe-1636-8040-2ce7-3ac908460bff&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=hZa75FyjOLfuTOUf_rFSrQ&expected_price_source=share&expected_price_currency=brl&expected_price=9123"
@@ -19118,16 +19214,12 @@
       "lat": -2.583316,
       "lon": -44.236683,
       "preco_atual": 1867.0,
-      "media": 2312.97,
+      "media": 2344.64,
       "min": 1085.0,
       "max": 3433.0,
-      "queda_pct": 19.3,
-      "n_obs": 89,
+      "queda_pct": 20.4,
+      "n_obs": 86,
       "serie": [
-        {
-          "t": "2026-07-13T21:51:28.924783",
-          "p": 1768.0
-        },
         {
           "t": "2026-07-14T12:06:47.035343",
           "p": 1770.0
@@ -19363,6 +19455,10 @@
         {
           "t": "2026-08-19T11:19:26.855665",
           "p": 1867.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
+          "p": 1867.0
         }
       ],
       "link": "https://www.aviasales.com/search/RIO2808SLZ05091?t=AD17878977001787927100000490SDUVCPBELSLZ17886315001788654300000380SLZVCPGIG_98911987e8fc5d5374574f1ad1295a4d_29990&search_date=13082026&expected_price_uuid=019ffa8d-fdc6-8030-eec7-91d556e1785f&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=YuqAiAg53Rju1qz1lztjfQ&expected_price_source=share&expected_price_currency=brl&expected_price=1867"
@@ -19446,16 +19542,12 @@
       "lat": -12.913988,
       "lon": -38.335197,
       "preco_atual": 1458.0,
-      "media": 1715.95,
+      "media": 1751.17,
       "min": 684.0,
       "max": 1756.0,
-      "queda_pct": 15.0,
-      "n_obs": 98,
+      "queda_pct": 16.7,
+      "n_obs": 102,
       "serie": [
-        {
-          "t": "2026-07-09T22:17:22.574149",
-          "p": 684.0
-        },
         {
           "t": "2026-07-10T13:07:45.121191",
           "p": 684.0
@@ -19690,6 +19782,10 @@
         },
         {
           "t": "2026-08-19T11:19:26.855665",
+          "p": 1458.0
+        },
+        {
+          "t": "2026-08-19T21:19:55.239805",
           "p": 1458.0
         }
       ],
@@ -20282,11 +20378,11 @@
       "lat": -5.06335,
       "lon": -42.821087,
       "preco_atual": 2095.0,
-      "media": 1744.78,
+      "media": 1769.55,
       "min": 955.0,
       "max": 2095.0,
       "queda_pct": 0.0,
-      "n_obs": 23,
+      "n_obs": 22,
       "serie": [
         {
           "t": "2026-06-29T22:06:18.671009",
@@ -20906,11 +21002,11 @@
       "lat": 35.6894875,
       "lon": 139.6917064,
       "preco_atual": 9192.0,
-      "media": 9142.68,
+      "media": 9130.33,
       "min": 8385.0,
       "max": 9439.0,
       "queda_pct": 0.0,
-      "n_obs": 25,
+      "n_obs": 24,
       "serie": [
         {
           "t": "2026-07-02T12:54:23.724268",
@@ -21594,11 +21690,11 @@
       "lat": -20.25681,
       "lon": -40.289566,
       "preco_atual": 1173.0,
-      "media": 891.66,
+      "media": 897.92,
       "min": 404.0,
       "max": 1175.0,
       "queda_pct": 0.0,
-      "n_obs": 76,
+      "n_obs": 74,
       "serie": [
         {
           "t": "2026-07-11T21:43:18.321517",
@@ -21854,7 +21950,7 @@
       "min": 4507.0,
       "max": 4507.0,
       "queda_pct": 0.0,
-      "n_obs": 11,
+      "n_obs": 10,
       "serie": [
         {
           "t": "2026-07-18T11:49:39.575769",
