@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T15:23:09.461681-03:00",
+  "generated_at": "2026-09-28T21:49:58.042327-03:00",
   "origin": {
     "code": "RIO",
     "name": "Rio de Janeiro",
@@ -23,8 +23,8 @@
       "lat": 55.755786,
       "lon": 37.617633,
       "preco_brl": 10881.0,
-      "media": 12016.74,
-      "queda_pct": 9.5,
+      "media": 11752.64,
+      "queda_pct": 7.4,
       "teto": 3500,
       "por_teto": false,
       "por_queda": false,
@@ -33,44 +33,6 @@
       "return_at": "2026-09-12T13:00:00+03:00",
       "airline": "KL",
       "link": "https://www.aviasales.com/search/RIO3108MOW12091?t=KL17882133001788369600002245GIGAMSSAWISTDME17892180001789415100003645DMEISTSAWAMSGIG_7120d401aaa846f86fe645678e8c8718_180470&search_date=29082026&expected_price_uuid=01a04dc3-d032-8040-27d7-fac230f4298d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=9MozcahQHB81_evkLQ_gPw&expected_price_source=share&expected_price_currency=brl&expected_price=10881"
-    },
-    {
-      "destino": "RNO",
-      "cidade": "Reno",
-      "pais": "US",
-      "regiao": "America do Norte",
-      "lat": 39.505783,
-      "lon": -119.775696,
-      "preco_brl": 6065.0,
-      "media": 6533.83,
-      "queda_pct": 7.2,
-      "teto": 3000,
-      "por_teto": false,
-      "por_queda": false,
-      "mes_ida": "2026-08",
-      "departure_at": "2026-08-30T21:05:00-03:00",
-      "return_at": "2026-09-12T18:28:00-07:00",
-      "airline": "UA",
-      "link": "https://www.aviasales.com/search/RIO3008RNO12091?t=UA17881239001788197880001473GIGIAHLAXRNO17892376801789460100003467RNOLAXIAHGIG_18f37e98ddcbb7fa981f5cac2c2e7543_99134&search_date=27082026&expected_price_uuid=01a040d7-958b-8040-2400-2e408e05e0bf&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=zs7qLfQpHD-sYrMJ90jojw&expected_price_source=share&expected_price_currency=brl&expected_price=6065"
-    },
-    {
-      "destino": "BUE",
-      "cidade": "Buenos Aires",
-      "pais": "AR",
-      "regiao": "America do Sul",
-      "lat": -34.6084175,
-      "lon": -58.3731613,
-      "preco_brl": 2103.0,
-      "media": 2157.4,
-      "queda_pct": 2.5,
-      "teto": 1500,
-      "por_teto": false,
-      "por_queda": false,
-      "mes_ida": "2026-08",
-      "departure_at": "2026-08-31T14:50:00-03:00",
-      "return_at": "2026-09-01T12:15:00-03:00",
-      "airline": "LA",
-      "link": "https://www.aviasales.com/search/RIO3108BUE01091?t=LA17881878001788255600001130SDUCGHGRUAEP17882649001788297300000540EZESCLGIG_075289341edeac4b37da8449904b5068_34888&search_date=31082026&expected_price_uuid=01a05578-9271-8040-6dca-614e4d68ed04&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=qGdVT7kiiDB4xUPCoj8ZBw&expected_price_source=share&expected_price_currency=brl&expected_price=2103"
     },
     {
       "destino": "UBA",
@@ -546,6 +508,25 @@
       "return_at": "2026-08-14T14:35:00-04:00",
       "airline": "AD",
       "link": "https://www.aviasales.com/search/RIO2207ROO14081?t=AD17847552001784800800000820SDUCGHVCPROO17867181001786746300000410ROOVCPSDU_ce19fb9a82873d9c409b004d547b3ca1_30092&search_date=23062026&expected_price_uuid=019ef4e2-ce05-8010-289d-9869622cf578&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=f9bt6nM19uPllGhUQI4Itg&expected_price_source=share&expected_price_currency=brl&expected_price=2097"
+    },
+    {
+      "destino": "BUE",
+      "cidade": "Buenos Aires",
+      "pais": "AR",
+      "regiao": "America do Sul",
+      "lat": -34.6084175,
+      "lon": -58.3731613,
+      "preco_brl": 2103.0,
+      "media": null,
+      "queda_pct": 0.0,
+      "teto": 1500,
+      "por_teto": false,
+      "por_queda": false,
+      "mes_ida": "2026-08",
+      "departure_at": "2026-08-31T14:50:00-03:00",
+      "return_at": "2026-09-01T12:15:00-03:00",
+      "airline": "LA",
+      "link": "https://www.aviasales.com/search/RIO3108BUE01091?t=LA17881878001788255600001130SDUCGHGRUAEP17882649001788297300000540EZESCLGIG_075289341edeac4b37da8449904b5068_34888&search_date=31082026&expected_price_uuid=01a05578-9271-8040-6dca-614e4d68ed04&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=qGdVT7kiiDB4xUPCoj8ZBw&expected_price_source=share&expected_price_currency=brl&expected_price=2103"
     },
     {
       "destino": "SCL",
@@ -1154,6 +1135,25 @@
       "return_at": "2026-07-31T12:46:00-05:00",
       "airline": "CM",
       "link": "https://www.aviasales.com/search/RIO0507ADZ31071?t=CM17832468001783327200001460GIGPTYADZ17855019601785543900000579ADZPTYGIG_8b6016f80dd87d151aadc84e503270cb_52131&search_date=02072026&expected_price_uuid=019f2163-4bf9-8010-a60d-3112ce7d8476&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=geMK_I5fRGju_KH1-rEAsA&expected_price_source=share&expected_price_currency=brl&expected_price=3510"
+    },
+    {
+      "destino": "MEX",
+      "cidade": "Mexico City",
+      "pais": "MX",
+      "regiao": "America Central",
+      "lat": 19.4270499,
+      "lon": -99.1275711,
+      "preco_brl": 3630.0,
+      "media": null,
+      "queda_pct": 0.0,
+      "teto": 2500,
+      "por_teto": false,
+      "por_queda": false,
+      "mes_ida": "2026-08",
+      "departure_at": "2026-08-31T10:30:00-03:00",
+      "return_at": "2026-09-04T09:50:00-05:00",
+      "airline": "CM",
+      "link": "https://www.aviasales.com/search/RIO3108MEX04091?t=CM17881722001788224400001050GIGPTYMEX17885154001788567900000695MEXPTYGIG_6e7a77f2520fa1e605d1302e78d35c27_56305&search_date=29072026&expected_price_uuid=019fad4c-a246-8040-a1d5-6a61abe82ca1&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=zP9CVBRj5vWIB0w-hWuB1g&expected_price_source=share&expected_price_currency=brl&expected_price=3630"
     }
   ]
 }
