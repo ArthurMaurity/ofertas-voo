@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T13:45:53.348594-03:00",
+  "generated_at": "2026-09-29T21:04:34.177652-03:00",
   "origin": {
     "code": "RIO",
     "name": "Rio de Janeiro",
@@ -23,8 +23,8 @@
       "lat": 55.755786,
       "lon": 37.617633,
       "preco_brl": 10881.0,
-      "media": 11700.4,
-      "queda_pct": 7.0,
+      "media": 11714.38,
+      "queda_pct": 7.1,
       "teto": 3500,
       "por_teto": false,
       "por_queda": false,
