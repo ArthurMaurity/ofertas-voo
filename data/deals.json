@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T13:39:52.919666-03:00",
+  "generated_at": "2026-09-30T21:22:00.259743-03:00",
   "origin": {
     "code": "RIO",
     "name": "Rio de Janeiro",
@@ -15,25 +15,6 @@
     "adults": 1
   },
   "deals": [
-    {
-      "destino": "MOW",
-      "cidade": "Moscow",
-      "pais": "RU",
-      "regiao": "Europa",
-      "lat": 55.755786,
-      "lon": 37.617633,
-      "preco_brl": 10881.0,
-      "media": 11714.38,
-      "queda_pct": 7.1,
-      "teto": 3500,
-      "por_teto": false,
-      "por_queda": false,
-      "mes_ida": "2026-08",
-      "departure_at": "2026-08-31T21:55:00-03:00",
-      "return_at": "2026-09-12T13:00:00+03:00",
-      "airline": "KL",
-      "link": "https://www.aviasales.com/search/RIO3108MOW12091?t=KL17882133001788369600002245GIGAMSSAWISTDME17892180001789415100003645DMEISTSAWAMSGIG_7120d401aaa846f86fe645678e8c8718_180470&search_date=29082026&expected_price_uuid=01a04dc3-d032-8040-27d7-fac230f4298d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=9MozcahQHB81_evkLQ_gPw&expected_price_source=share&expected_price_currency=brl&expected_price=10881"
-    },
     {
       "destino": "UBA",
       "cidade": "Uberaba",
@@ -1154,6 +1135,25 @@
       "return_at": "2026-09-04T09:50:00-05:00",
       "airline": "CM",
       "link": "https://www.aviasales.com/search/RIO3108MEX04091?t=CM17881722001788224400001050GIGPTYMEX17885154001788567900000695MEXPTYGIG_6e7a77f2520fa1e605d1302e78d35c27_56305&search_date=29072026&expected_price_uuid=019fad4c-a246-8040-a1d5-6a61abe82ca1&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=zP9CVBRj5vWIB0w-hWuB1g&expected_price_source=share&expected_price_currency=brl&expected_price=3630"
+    },
+    {
+      "destino": "SAL",
+      "cidade": "San Salvador",
+      "pais": "SV",
+      "regiao": "America Central",
+      "lat": 13.445126,
+      "lon": -89.05723,
+      "preco_brl": 3635.0,
+      "media": null,
+      "queda_pct": 0.0,
+      "teto": 2500,
+      "por_teto": false,
+      "por_queda": false,
+      "mes_ida": "2026-07",
+      "departure_at": "2026-07-31T07:20:00-03:00",
+      "return_at": "2026-09-06T08:05:00-06:00",
+      "airline": "AV",
+      "link": "https://www.aviasales.com/search/RIO3107SAL06091?t=AV17854824001785512400000680GIGBOGSAL17886819001788741000000805SALBOGGIG_3e096caaded197ef19a871e019aaa41d_54234&search_date=05072026&expected_price_uuid=019f3010-3c8b-8030-25e3-0b70e9952261&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=pXfx0XqxvYzKsTk98On3eg&expected_price_source=share&expected_price_currency=brl&expected_price=3635"
     }
   ]
 }
