@@ -7,27 +7,27 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/grinbergs-village-hotel-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.060130+00:00"
+    "coletado_em": "2026-11-14T01:11:42.836738+00:00"
   },
   {
     "nome": "Enjoy Olimpia Park Resort",
     "localizacao": "",
-    "preco_por_noite": 429.0,
-    "preco_total": 429.0,
+    "preco_por_noite": 397.0,
+    "preco_total": 397.0,
     "desconto_pct": 36.0,
     "link": "https://www.zarpo.com.br/hotel/enjoy-olimpia-park-resort.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.061141+00:00"
+    "coletado_em": "2026-11-14T01:11:42.837564+00:00"
   },
   {
     "nome": "Wyndham Olímpia Royal Hotels",
     "localizacao": "",
-    "preco_por_noite": 433.0,
-    "preco_total": 433.0,
+    "preco_por_noite": 417.0,
+    "preco_total": 417.0,
     "desconto_pct": 35.0,
     "link": "https://www.zarpo.com.br/hotel/wyndham-olimpia-royal-hotels.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.062112+00:00"
+    "coletado_em": "2026-11-14T01:11:42.838281+00:00"
   },
   {
     "nome": "Royal Tulip Holambra",
@@ -37,7 +37,7 @@
     "desconto_pct": 16.0,
     "link": "https://www.zarpo.com.br/hotel/royal-tulip-holambra.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.063006+00:00"
+    "coletado_em": "2026-11-14T01:11:42.838960+00:00"
   },
   {
     "nome": "Vale das Águas Fazenda Resort",
@@ -47,7 +47,7 @@
     "desconto_pct": 44.0,
     "link": "https://www.zarpo.com.br/hotel/vale-das-aguas-fazenda-resort.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.063902+00:00"
+    "coletado_em": "2026-11-14T01:11:42.839698+00:00"
   },
   {
     "nome": "Ilha de Toque Toque",
@@ -57,7 +57,17 @@
     "desconto_pct": 36.0,
     "link": "https://www.zarpo.com.br/hotel/ilha-de-toque-toque-eco-boutique-hotel-spa.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.064719+00:00"
+    "coletado_em": "2026-11-14T01:11:42.840309+00:00"
+  },
+  {
+    "nome": "São Pedro Thermas Resort",
+    "localizacao": "",
+    "preco_por_noite": 890.0,
+    "preco_total": 890.0,
+    "desconto_pct": 41.0,
+    "link": "https://www.zarpo.com.br/hotel/enjoy-sao-pedro-thermas-resort.html",
+    "fonte": "zarpo",
+    "coletado_em": "2026-11-14T01:11:42.840978+00:00"
   },
   {
     "nome": "Casa di Sirena Ilhabela",
@@ -67,7 +77,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/wyndham-ilhabela-casa-di-sirena.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.065550+00:00"
+    "coletado_em": "2026-11-14T01:11:42.841570+00:00"
   },
   {
     "nome": "Hot Beach Suites",
@@ -77,7 +87,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hot-beach-suites.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.066378+00:00"
+    "coletado_em": "2026-11-14T01:11:42.842156+00:00"
   },
   {
     "nome": "Blue Tree Thermas de Lins",
@@ -87,7 +97,7 @@
     "desconto_pct": 50.0,
     "link": "https://www.zarpo.com.br/hotel/blue-tree-thermas-de-lins.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.067328+00:00"
+    "coletado_em": "2026-11-14T01:11:42.842821+00:00"
   },
   {
     "nome": "Hot Beach Resort",
@@ -97,17 +107,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hot-beach-resort.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.068160+00:00"
-  },
-  {
-    "nome": "São Pedro Thermas Resort",
-    "localizacao": "",
-    "preco_por_noite": 1027.0,
-    "preco_total": 1027.0,
-    "desconto_pct": 30.0,
-    "link": "https://www.zarpo.com.br/hotel/enjoy-sao-pedro-thermas-resort.html",
-    "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.069092+00:00"
+    "coletado_em": "2026-11-14T01:11:42.843407+00:00"
   },
   {
     "nome": "Resort e Golfe Clube dos 500",
@@ -117,17 +117,17 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-resort-e-golfe-clube-dos-500-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.069914+00:00"
+    "coletado_em": "2026-11-14T01:11:42.843999+00:00"
   },
   {
     "nome": "Bendito Cacao Family Resort",
     "localizacao": "",
-    "preco_por_noite": 1259.0,
-    "preco_total": 1259.0,
-    "desconto_pct": null,
+    "preco_por_noite": 1222.0,
+    "preco_total": 1222.0,
+    "desconto_pct": 8.0,
     "link": "https://www.zarpo.com.br/hotel/bendito-cacao-family-resort-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.070835+00:00"
+    "coletado_em": "2026-11-14T01:11:42.844662+00:00"
   },
   {
     "nome": "Japy Golf Resort",
@@ -137,7 +137,7 @@
     "desconto_pct": 12.0,
     "link": "https://www.zarpo.com.br/hotel/japy-golf-resort-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:26.071753+00:00"
+    "coletado_em": "2026-11-14T01:11:42.845347+00:00"
   },
   {
     "nome": "Bourbon Atibaia Resort",
@@ -147,7 +147,7 @@
     "desconto_pct": 18.0,
     "link": "https://www.zarpo.com.br/hotel/bourbon-atibaia-resort.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.911793+00:00"
+    "coletado_em": "2026-11-14T01:11:54.395155+00:00"
   },
   {
     "nome": "Hotel Villa Rossa",
@@ -157,7 +157,7 @@
     "desconto_pct": 10.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-villa-rossa.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.912681+00:00"
+    "coletado_em": "2026-11-14T01:11:54.395849+00:00"
   },
   {
     "nome": "Tauá Resort Atibaia",
@@ -167,27 +167,27 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/taua-hotel-convention-atibaia.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.913488+00:00"
+    "coletado_em": "2026-11-14T01:11:54.396438+00:00"
   },
   {
     "nome": "Royal Palm Plaza Resort Campinas",
     "localizacao": "",
-    "preco_por_noite": 2102.0,
-    "preco_total": 2102.0,
+    "preco_por_noite": 2077.0,
+    "preco_total": 2077.0,
     "desconto_pct": 12.0,
     "link": "https://www.zarpo.com.br/hotel/royal-palm-plaza-resort-campinas.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.914299+00:00"
+    "coletado_em": "2026-11-14T01:11:54.397102+00:00"
   },
   {
     "nome": "Cyan Resort by Atlantica",
     "localizacao": "",
-    "preco_por_noite": 1372.0,
-    "preco_total": 2743.0,
+    "preco_por_noite": 1414.0,
+    "preco_total": 2829.0,
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/cyan-resort-by-atlantica.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.915096+00:00"
+    "coletado_em": "2026-11-14T01:11:54.397671+00:00"
   },
   {
     "nome": "Mavsa Resort All-Inclusive",
@@ -197,7 +197,7 @@
     "desconto_pct": 19.0,
     "link": "https://www.zarpo.com.br/hotel/mavsa-resort-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.915905+00:00"
+    "coletado_em": "2026-11-14T01:11:54.398258+00:00"
   },
   {
     "nome": "Hotel Fazenda Golden Park",
@@ -207,17 +207,7 @@
     "desconto_pct": 19.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-golden-park-campos-do-jordao.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.916844+00:00"
-  },
-  {
-    "nome": "Hotel JP Ribeirão Preto Resort & Convenções by Nacional Inn",
-    "localizacao": "",
-    "preco_por_noite": 334.0,
-    "preco_total": 334.0,
-    "desconto_pct": 29.0,
-    "link": "https://www.zarpo.com.br/hotel/royal-tulip-jp-ribeirao-preto.html",
-    "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.917748+00:00"
+    "coletado_em": "2026-11-14T01:11:54.398917+00:00"
   },
   {
     "nome": "Hotel Pirâmides Jarinu",
@@ -227,7 +217,17 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-piramides-jarinu.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.918544+00:00"
+    "coletado_em": "2026-11-14T01:11:54.399493+00:00"
+  },
+  {
+    "nome": "Hotel JP Ribeirão Preto Resort & Convenções by Nacional Inn",
+    "localizacao": "",
+    "preco_por_noite": 362.0,
+    "preco_total": 362.0,
+    "desconto_pct": 29.0,
+    "link": "https://www.zarpo.com.br/hotel/royal-tulip-jp-ribeirao-preto.html",
+    "fonte": "zarpo",
+    "coletado_em": "2026-11-14T01:11:54.400161+00:00"
   },
   {
     "nome": "Sun Valley by Atlantica",
@@ -237,7 +237,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/sun-valley-by-atlantica-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.919341+00:00"
+    "coletado_em": "2026-11-14T01:11:54.400774+00:00"
   },
   {
     "nome": "Bourbon Santos Hotel",
@@ -247,17 +247,17 @@
     "desconto_pct": 12.0,
     "link": "https://www.zarpo.com.br/hotel/bourbon-santos-convention-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.920201+00:00"
+    "coletado_em": "2026-11-14T01:11:54.401436+00:00"
   },
   {
     "nome": "Enjoy Solar das Águas Resort",
     "localizacao": "",
-    "preco_por_noite": 434.0,
-    "preco_total": 434.0,
+    "preco_por_noite": 401.0,
+    "preco_total": 401.0,
     "desconto_pct": 42.0,
     "link": "https://www.zarpo.com.br/hotel/enjoy-solar-das-aguas-park-resort.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.921111+00:00"
+    "coletado_em": "2026-11-14T01:11:54.402109+00:00"
   },
   {
     "nome": "Hot Beach Celebration",
@@ -267,7 +267,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/celebration-resort-olimpia-by-hot-beach.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.921908+00:00"
+    "coletado_em": "2026-11-14T01:11:54.402675+00:00"
   },
   {
     "nome": "Itapura Eco Resort",
@@ -277,7 +277,7 @@
     "desconto_pct": 24.0,
     "link": "https://www.zarpo.com.br/hotel/eldorado-atibaia-eco-resort.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:36.922755+00:00"
+    "coletado_em": "2026-11-14T01:11:54.403337+00:00"
   },
   {
     "nome": "Villagio Embu Resort",
@@ -287,7 +287,7 @@
     "desconto_pct": 15.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-villagio-embu.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.788533+00:00"
+    "coletado_em": "2026-11-14T01:12:05.435164+00:00"
   },
   {
     "nome": "Hilton Almenat Tapestry",
@@ -297,7 +297,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hilton-almenat-tapestry.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.789405+00:00"
+    "coletado_em": "2026-11-14T01:12:05.435851+00:00"
   },
   {
     "nome": "Hotel Fazenda Ararita",
@@ -307,7 +307,7 @@
     "desconto_pct": 19.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-fazenda-ararita.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.790226+00:00"
+    "coletado_em": "2026-11-14T01:12:05.436449+00:00"
   },
   {
     "nome": "Fasano Boa Vista",
@@ -317,7 +317,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/fasano-boa-vista.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.791019+00:00"
+    "coletado_em": "2026-11-14T01:12:05.437024+00:00"
   },
   {
     "nome": "Castelo Nacional Inn",
@@ -327,7 +327,7 @@
     "desconto_pct": 19.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-castelo-nacional-inn-campos-do-jordao.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.791944+00:00"
+    "coletado_em": "2026-11-14T01:12:05.437680+00:00"
   },
   {
     "nome": "Hotel Port Louis",
@@ -337,7 +337,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-port-louis.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.792762+00:00"
+    "coletado_em": "2026-11-14T01:12:05.438271+00:00"
   },
   {
     "nome": "Royal Palm Tower Anhanguera",
@@ -347,7 +347,7 @@
     "desconto_pct": 18.0,
     "link": "https://www.zarpo.com.br/hotel/royal-palm-tower-anhanguera-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.793593+00:00"
+    "coletado_em": "2026-11-14T01:12:05.438846+00:00"
   },
   {
     "nome": "Hotel Mercedes",
@@ -357,7 +357,7 @@
     "desconto_pct": 16.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-mercedes-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.794458+00:00"
+    "coletado_em": "2026-11-14T01:12:05.439505+00:00"
   },
   {
     "nome": "Gran Paradiso by Livá",
@@ -367,7 +367,7 @@
     "desconto_pct": 30.0,
     "link": "https://www.zarpo.com.br/hotel/gran-paradiso-resort-campos-do-jordao-by-ventura-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.795307+00:00"
+    "coletado_em": "2026-11-14T01:12:05.440166+00:00"
   },
   {
     "nome": "Wanderlust Experience",
@@ -377,7 +377,7 @@
     "desconto_pct": 30.0,
     "link": "https://www.zarpo.com.br/hotel/wanderlust-experience-hotel-bw-signature-collection-by-liva-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.796159+00:00"
+    "coletado_em": "2026-11-14T01:12:05.440775+00:00"
   },
   {
     "nome": "Grand Mercure São Paulo Ibirapuera",
@@ -387,7 +387,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/grand-mercure-sao-paulo-ibirapuera-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.796949+00:00"
+    "coletado_em": "2026-11-14T01:12:05.441340+00:00"
   },
   {
     "nome": "Pousada Alto da Boa Vista",
@@ -397,7 +397,7 @@
     "desconto_pct": 31.0,
     "link": "https://www.zarpo.com.br/hotel/pousada-alto-da-boa-vista-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.797745+00:00"
+    "coletado_em": "2026-11-14T01:12:05.441909+00:00"
   },
   {
     "nome": "Carpe Diem Eco Resort Olímpia",
@@ -407,7 +407,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/carpe-diem-eco-resort-olimpia-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.798647+00:00"
+    "coletado_em": "2026-11-14T01:12:05.442558+00:00"
   },
   {
     "nome": "Hot Beach Raízes",
@@ -417,17 +417,17 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/thermas-park-resort-spa-by-hot-beach.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:19:47.799445+00:00"
+    "coletado_em": "2026-11-14T01:12:05.443127+00:00"
   },
   {
     "nome": "Pousada Vila Pitanga",
     "localizacao": "",
-    "preco_por_noite": 422.0,
-    "preco_total": 422.0,
+    "preco_por_noite": 330.0,
+    "preco_total": 330.0,
     "desconto_pct": 24.0,
     "link": "https://www.zarpo.com.br/hotel/pousada-vila-pitanga.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.482849+00:00"
+    "coletado_em": "2026-11-14T01:12:26.280622+00:00"
   },
   {
     "nome": "Serena Búzios Hotel",
@@ -437,7 +437,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/serena-buzios-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.483710+00:00"
+    "coletado_em": "2026-11-14T01:12:26.281272+00:00"
   },
   {
     "nome": "Vila Galé Eco Resort de Angra",
@@ -447,7 +447,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/vila-gale-angra-resort-all-inclusive.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.484517+00:00"
+    "coletado_em": "2026-11-14T01:12:26.281841+00:00"
   },
   {
     "nome": "Windsor Marapendi",
@@ -457,7 +457,7 @@
     "desconto_pct": 10.0,
     "link": "https://www.zarpo.com.br/hotel/windsor-marapendi-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.485332+00:00"
+    "coletado_em": "2026-11-14T01:12:26.282460+00:00"
   },
   {
     "nome": "CDesign Hotel",
@@ -467,7 +467,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/cdesign-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.486137+00:00"
+    "coletado_em": "2026-11-14T01:12:26.283082+00:00"
   },
   {
     "nome": "Hotel Aretê Búzios",
@@ -477,7 +477,7 @@
     "desconto_pct": 20.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-arete-buzios-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.486945+00:00"
+    "coletado_em": "2026-11-14T01:12:26.283663+00:00"
   },
   {
     "nome": "Windsor Tower Hotel",
@@ -487,7 +487,7 @@
     "desconto_pct": 16.0,
     "link": "https://www.zarpo.com.br/hotel/windsor-tower-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.487789+00:00"
+    "coletado_em": "2026-11-14T01:12:26.284247+00:00"
   },
   {
     "nome": "Santé Búzios by Livá",
@@ -497,17 +497,7 @@
     "desconto_pct": 30.0,
     "link": "https://www.zarpo.com.br/hotel/sante-buzios-by-liva-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.488651+00:00"
-  },
-  {
-    "nome": "Grand Mercure Rio De Janeiro Copacabana",
-    "localizacao": "",
-    "preco_por_noite": 868.0,
-    "preco_total": 868.0,
-    "desconto_pct": null,
-    "link": "https://www.zarpo.com.br/hotel/grand-mercure-rio-de-janeiro-copacabana.html",
-    "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.489450+00:00"
+    "coletado_em": "2026-11-14T01:12:26.284851+00:00"
   },
   {
     "nome": "Hotel Solar do Império",
@@ -517,7 +507,17 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-solar-do-imperio-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.490299+00:00"
+    "coletado_em": "2026-11-14T01:12:26.285454+00:00"
+  },
+  {
+    "nome": "Grand Mercure Rio De Janeiro Copacabana",
+    "localizacao": "",
+    "preco_por_noite": 893.0,
+    "preco_total": 893.0,
+    "desconto_pct": null,
+    "link": "https://www.zarpo.com.br/hotel/grand-mercure-rio-de-janeiro-copacabana.html",
+    "fonte": "zarpo",
+    "coletado_em": "2026-11-14T01:12:26.286012+00:00"
   },
   {
     "nome": "Sandi Hotel",
@@ -527,7 +527,7 @@
     "desconto_pct": 32.0,
     "link": "https://www.zarpo.com.br/hotel/sandi-hotel-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.491209+00:00"
+    "coletado_em": "2026-11-14T01:12:26.286650+00:00"
   },
   {
     "nome": "Pedra da Laguna",
@@ -537,7 +537,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pedra-da-laguna-boutique-hotel-spa-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.492053+00:00"
+    "coletado_em": "2026-11-14T01:12:26.287257+00:00"
   },
   {
     "nome": "Hotel Fazenda Suíça Le Canton",
@@ -547,7 +547,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-fazenda-suica-le-canton.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.492846+00:00"
+    "coletado_em": "2026-11-14T01:12:26.287809+00:00"
   },
   {
     "nome": "Hotel Magique Le Canton",
@@ -557,7 +557,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-magique-le-canton.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:08.493627+00:00"
+    "coletado_em": "2026-11-14T01:12:26.288371+00:00"
   },
   {
     "nome": "Fasano Angra dos Reis",
@@ -567,7 +567,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/fasano-angra-dos-reis.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.164833+00:00"
+    "coletado_em": "2026-11-14T01:12:37.107806+00:00"
   },
   {
     "nome": "Fasano Rio de Janeiro",
@@ -577,7 +577,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/fasano-rio-de-janeiro.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.165640+00:00"
+    "coletado_em": "2026-11-14T01:12:37.108418+00:00"
   },
   {
     "nome": "Urikana Boutique Hotel",
@@ -587,7 +587,7 @@
     "desconto_pct": 54.0,
     "link": "https://www.zarpo.com.br/hotel/urikana-boutique-hotel-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.166453+00:00"
+    "coletado_em": "2026-11-14T01:12:37.109004+00:00"
   },
   {
     "nome": "Hilton Barra Rio de Janeiro",
@@ -597,7 +597,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hilton-barra-rio-de-janeiro.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.167251+00:00"
+    "coletado_em": "2026-11-14T01:12:37.109571+00:00"
   },
   {
     "nome": "Windsor Oceanico",
@@ -607,7 +607,7 @@
     "desconto_pct": 10.0,
     "link": "https://www.zarpo.com.br/hotel/windsor-oceanico-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.168054+00:00"
+    "coletado_em": "2026-11-14T01:12:37.110156+00:00"
   },
   {
     "nome": "Vila Galé Rio de Janeiro",
@@ -617,7 +617,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/vila-gale-rio-de-janeiro.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.168855+00:00"
+    "coletado_em": "2026-11-14T01:12:37.110713+00:00"
   },
   {
     "nome": "Hilton Rio de Janeiro Copacabana",
@@ -627,7 +627,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hilton-rio-de-janeiro-copacabana.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.169644+00:00"
+    "coletado_em": "2026-11-14T01:12:37.111283+00:00"
   },
   {
     "nome": "Eco Resort Serra Imperial",
@@ -637,7 +637,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/eco-resort-serra-imperial-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.170441+00:00"
+    "coletado_em": "2026-11-14T01:12:37.111840+00:00"
   },
   {
     "nome": "Pousada Maria Maria",
@@ -647,7 +647,7 @@
     "desconto_pct": 30.0,
     "link": "https://www.zarpo.com.br/hotel/pousada-maria-maria.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.171236+00:00"
+    "coletado_em": "2026-11-14T01:12:37.112419+00:00"
   },
   {
     "nome": "Savoy Othon",
@@ -657,7 +657,7 @@
     "desconto_pct": 9.0,
     "link": "https://www.zarpo.com.br/hotel/savoy-othon.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.172033+00:00"
+    "coletado_em": "2026-11-14T01:12:37.112986+00:00"
   },
   {
     "nome": "Paradiso Corporate",
@@ -667,7 +667,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-paradiso-corporate-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.172815+00:00"
+    "coletado_em": "2026-11-14T01:12:37.113560+00:00"
   },
   {
     "nome": "Windsor Guanabara",
@@ -677,7 +677,7 @@
     "desconto_pct": 5.0,
     "link": "https://www.zarpo.com.br/hotel/windsor-guanabara-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.173603+00:00"
+    "coletado_em": "2026-11-14T01:12:37.114141+00:00"
   },
   {
     "nome": "Nacional inn Angra dos Reis",
@@ -687,7 +687,7 @@
     "desconto_pct": 29.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-nacional-inn-angra-dos-reis-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.174462+00:00"
+    "coletado_em": "2026-11-14T01:12:37.114758+00:00"
   },
   {
     "nome": "Atlântico Búzios",
@@ -697,7 +697,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-atlantico-buzios.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:19.175309+00:00"
+    "coletado_em": "2026-11-14T01:12:37.115355+00:00"
   },
   {
     "nome": "Pousada da Condessa",
@@ -707,7 +707,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pousada-da-condessa-paraty-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:30.017298+00:00"
+    "coletado_em": "2026-11-14T01:12:48.107331+00:00"
   },
   {
     "nome": "Windsor Barra",
@@ -717,7 +717,7 @@
     "desconto_pct": 10.0,
     "link": "https://www.zarpo.com.br/hotel/windsor-barra-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:30.018145+00:00"
+    "coletado_em": "2026-11-14T01:12:48.107952+00:00"
   },
   {
     "nome": "Pousada Tankamana",
@@ -727,7 +727,7 @@
     "desconto_pct": 16.0,
     "link": "https://www.zarpo.com.br/hotel/pousada-tankamana-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:30.018966+00:00"
+    "coletado_em": "2026-11-14T01:12:48.108548+00:00"
   },
   {
     "nome": "Yoo2 Rio de Janeiro, Tapestry Collection by Hilton",
@@ -737,7 +737,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/yoo2-rio-de-janeiro-tapestry-collection-by-hilton-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:30.019756+00:00"
+    "coletado_em": "2026-11-14T01:12:48.109127+00:00"
   },
   {
     "nome": "Casa Turquesa Maison d´Hôtes",
@@ -747,7 +747,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/casa-turquesa-maison-d-hotes-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:30.020558+00:00"
+    "coletado_em": "2026-11-14T01:12:48.109693+00:00"
   },
   {
     "nome": "Vilage Inn Poços de Caldas",
@@ -757,7 +757,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-vilage-inn-all-inclusive-pocos-de-caldas.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.835707+00:00"
+    "coletado_em": "2026-11-14T01:13:08.912157+00:00"
   },
   {
     "nome": "Cassino All-Inclusive Resort",
@@ -767,7 +767,7 @@
     "desconto_pct": 19.0,
     "link": "https://www.zarpo.com.br/hotel/cassino-all-inclusive-resort-pocos-de-caldas.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.836640+00:00"
+    "coletado_em": "2026-11-14T01:13:08.912842+00:00"
   },
   {
     "nome": "Golden Park Poços de Caldas",
@@ -777,7 +777,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-golden-park-all-inclusive-pocos-de-caldas.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.837544+00:00"
+    "coletado_em": "2026-11-14T01:13:08.913536+00:00"
   },
   {
     "nome": "Hotel Fazenda Vale da Mantiqueira",
@@ -787,7 +787,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-fazenda-vale-da-mantiqueira.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.838373+00:00"
+    "coletado_em": "2026-11-14T01:13:08.914122+00:00"
   },
   {
     "nome": "Thermas Resort Poços de Caldas",
@@ -797,7 +797,7 @@
     "desconto_pct": 5.0,
     "link": "https://www.zarpo.com.br/hotel/thermas-all-inclusive-resort-pocos-de-caldas.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.839223+00:00"
+    "coletado_em": "2026-11-14T01:13:08.914743+00:00"
   },
   {
     "nome": "Pousada Cabanas no Mundo",
@@ -807,17 +807,17 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pousada-cabanas-no-mundo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.840106+00:00"
+    "coletado_em": "2026-11-14T01:13:08.915355+00:00"
   },
   {
     "nome": "Parque do Avestruz Eco Resort All-Inclusive",
     "localizacao": "",
-    "preco_por_noite": 1115.0,
-    "preco_total": 2230.0,
+    "preco_por_noite": 1376.0,
+    "preco_total": 2751.0,
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/parque-do-avestruz-eco-resort-all-inclusive-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.840924+00:00"
+    "coletado_em": "2026-11-14T01:13:08.915916+00:00"
   },
   {
     "nome": "Pousada Cantinho das Estrelas",
@@ -827,7 +827,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pousada-cantinho-das-estrelas-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.841797+00:00"
+    "coletado_em": "2026-11-14T01:13:08.916487+00:00"
   },
   {
     "nome": "Resort Magnífico",
@@ -837,7 +837,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/resort-magnifico-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.842628+00:00"
+    "coletado_em": "2026-11-14T01:13:08.917053+00:00"
   },
   {
     "nome": "Vila Galé Collection Ouro Preto",
@@ -847,7 +847,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/vila-gale-collection-ouro-preto-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.843417+00:00"
+    "coletado_em": "2026-11-14T01:13:08.917616+00:00"
   },
   {
     "nome": "Hotel Serraverde",
@@ -857,7 +857,7 @@
     "desconto_pct": 12.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-serraverde-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.844213+00:00"
+    "coletado_em": "2026-11-14T01:13:08.918191+00:00"
   },
   {
     "nome": "Tauá Resort Caeté",
@@ -867,7 +867,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/taua-resort-caete.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.844999+00:00"
+    "coletado_em": "2026-11-14T01:13:08.918757+00:00"
   },
   {
     "nome": "Hotel Fazenda Poços de Caldas",
@@ -877,7 +877,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/hotel-fazenda-pocos-de-caldas.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.845854+00:00"
+    "coletado_em": "2026-11-14T01:13:08.919366+00:00"
   },
   {
     "nome": "Vale Suíço Resort",
@@ -887,7 +887,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/vale-suico-resort.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:20:50.846682+00:00"
+    "coletado_em": "2026-11-14T01:13:08.919967+00:00"
   },
   {
     "nome": "Palace Hotel Poços de Caldas",
@@ -897,7 +897,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/palace-hotel-pocos-de-caldas.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:01.571842+00:00"
+    "coletado_em": "2026-11-14T01:13:19.711621+00:00"
   },
   {
     "nome": "Pousada Paço do Lavradio",
@@ -907,7 +907,7 @@
     "desconto_pct": 19.0,
     "link": "https://www.zarpo.com.br/hotel/pousada-paco-do-lavradio-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:01.572663+00:00"
+    "coletado_em": "2026-11-14T01:13:19.712235+00:00"
   },
   {
     "nome": "Grande Hotel Termas de Araxá",
@@ -917,7 +917,7 @@
     "desconto_pct": 7.0,
     "link": "https://www.zarpo.com.br/hotel/grande-hotel-termas-de-araxa.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:01.573476+00:00"
+    "coletado_em": "2026-11-14T01:13:19.712824+00:00"
   },
   {
     "nome": "Monreale Resort",
@@ -927,7 +927,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/monreale-resort-parque-aquatico-pocos-de-caldas.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:01.574273+00:00"
+    "coletado_em": "2026-11-14T01:13:19.713398+00:00"
   },
   {
     "nome": "VOA Hotel Caxambu",
@@ -937,7 +937,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/voa-hotel-caxambu.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:01.575066+00:00"
+    "coletado_em": "2026-11-14T01:13:19.713958+00:00"
   },
   {
     "nome": "Nacional Inn Araxá Previdência",
@@ -947,7 +947,7 @@
     "desconto_pct": 36.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-nacional-inn-araxa-previdencia-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:01.575863+00:00"
+    "coletado_em": "2026-11-14T01:13:19.714532+00:00"
   },
   {
     "nome": "Transamerica Aeroporto Lagoa Santa",
@@ -957,7 +957,7 @@
     "desconto_pct": 12.0,
     "link": "https://www.zarpo.com.br/hotel/ramada-aeroporto-hotel-lagoa-santa.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:01.576651+00:00"
+    "coletado_em": "2026-11-14T01:13:19.715105+00:00"
   },
   {
     "nome": "Pousada Minas Gerais",
@@ -967,7 +967,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pousada-minas-gerais.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:01.577442+00:00"
+    "coletado_em": "2026-11-14T01:13:19.715660+00:00"
   },
   {
     "nome": "Pousada Vila Craton",
@@ -977,7 +977,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pousada-vila-craton-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:01.578251+00:00"
+    "coletado_em": "2026-11-14T01:13:19.716223+00:00"
   },
   {
     "nome": "Fasano Belo Horizonte",
@@ -987,7 +987,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/fasano-belo-horizonte.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:01.579101+00:00"
+    "coletado_em": "2026-11-14T01:13:19.716818+00:00"
   },
   {
     "nome": "Palace Hotel Poços de Caldas",
@@ -997,7 +997,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/palace-hotel-pocos-de-caldas.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:12.249963+00:00"
+    "coletado_em": "2026-11-14T01:13:30.475825+00:00"
   },
   {
     "nome": "Pousada Paço do Lavradio",
@@ -1007,7 +1007,7 @@
     "desconto_pct": 19.0,
     "link": "https://www.zarpo.com.br/hotel/pousada-paco-do-lavradio-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:12.250812+00:00"
+    "coletado_em": "2026-11-14T01:13:30.476444+00:00"
   },
   {
     "nome": "Grande Hotel Termas de Araxá",
@@ -1017,7 +1017,7 @@
     "desconto_pct": 7.0,
     "link": "https://www.zarpo.com.br/hotel/grande-hotel-termas-de-araxa.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:12.251612+00:00"
+    "coletado_em": "2026-11-14T01:13:30.477026+00:00"
   },
   {
     "nome": "Monreale Resort",
@@ -1027,7 +1027,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/monreale-resort-parque-aquatico-pocos-de-caldas.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:12.252422+00:00"
+    "coletado_em": "2026-11-14T01:13:30.477590+00:00"
   },
   {
     "nome": "VOA Hotel Caxambu",
@@ -1037,7 +1037,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/voa-hotel-caxambu.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:12.253224+00:00"
+    "coletado_em": "2026-11-14T01:13:30.478160+00:00"
   },
   {
     "nome": "Nacional Inn Araxá Previdência",
@@ -1047,7 +1047,7 @@
     "desconto_pct": 36.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-nacional-inn-araxa-previdencia-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:12.254036+00:00"
+    "coletado_em": "2026-11-14T01:13:30.478736+00:00"
   },
   {
     "nome": "Transamerica Aeroporto Lagoa Santa",
@@ -1057,7 +1057,7 @@
     "desconto_pct": 12.0,
     "link": "https://www.zarpo.com.br/hotel/ramada-aeroporto-hotel-lagoa-santa.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:12.254848+00:00"
+    "coletado_em": "2026-11-14T01:13:30.479334+00:00"
   },
   {
     "nome": "Pousada Minas Gerais",
@@ -1067,7 +1067,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pousada-minas-gerais.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:12.255635+00:00"
+    "coletado_em": "2026-11-14T01:13:30.479888+00:00"
   },
   {
     "nome": "Pousada Vila Craton",
@@ -1077,7 +1077,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pousada-vila-craton-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:12.256434+00:00"
+    "coletado_em": "2026-11-14T01:13:30.480458+00:00"
   },
   {
     "nome": "Fasano Belo Horizonte",
@@ -1087,7 +1087,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/fasano-belo-horizonte.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:12.257286+00:00"
+    "coletado_em": "2026-11-14T01:13:30.481070+00:00"
   },
   {
     "nome": "Resort Tororomba",
@@ -1097,17 +1097,17 @@
     "desconto_pct": 51.0,
     "link": "https://www.zarpo.com.br/hotel/resort-tororomba-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.119838+00:00"
+    "coletado_em": "2026-11-14T01:13:51.719556+00:00"
   },
   {
     "nome": "Nauticomar All-Inclusive",
     "localizacao": "",
-    "preco_por_noite": 1028.0,
-    "preco_total": 1028.0,
+    "preco_por_noite": 894.0,
+    "preco_total": 894.0,
     "desconto_pct": 41.0,
     "link": "https://www.zarpo.com.br/hotel/nauticomar-resort-all-inclusive-beach-club.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.120759+00:00"
+    "coletado_em": "2026-11-14T01:13:51.720257+00:00"
   },
   {
     "nome": "Cana Brava All-Inclusive Resort",
@@ -1117,17 +1117,17 @@
     "desconto_pct": 11.0,
     "link": "https://www.zarpo.com.br/hotel/cana-brava-all-inclusive-resort.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.121653+00:00"
+    "coletado_em": "2026-11-14T01:13:51.720906+00:00"
   },
   {
     "nome": "Grand Palladium Imbassaí",
     "localizacao": "",
-    "preco_por_noite": 1906.0,
-    "preco_total": 1906.0,
+    "preco_por_noite": 1710.0,
+    "preco_total": 1710.0,
     "desconto_pct": 9.0,
     "link": "https://www.zarpo.com.br/hotel/grand-palladium-imbassai-resort-spa.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.122519+00:00"
+    "coletado_em": "2026-11-14T01:13:51.721536+00:00"
   },
   {
     "nome": "Tivoli EcoResort Praia do Forte",
@@ -1137,7 +1137,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/tivoli-ecoresort-praia-do-forte-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.123324+00:00"
+    "coletado_em": "2026-11-14T01:13:51.722113+00:00"
   },
   {
     "nome": "Sauipe Grand Premium Brisa",
@@ -1147,17 +1147,17 @@
     "desconto_pct": 25.0,
     "link": "https://www.zarpo.com.br/hotel/sauipe-grand-premium-brisa-all-inclusive.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.124137+00:00"
+    "coletado_em": "2026-11-14T01:13:51.722683+00:00"
   },
   {
     "nome": "Sauipe Resorts Ala Terra",
     "localizacao": "",
-    "preco_por_noite": 1363.0,
-    "preco_total": 2727.0,
+    "preco_por_noite": 1317.0,
+    "preco_total": 2633.0,
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/sauipe-resorts-ala-terra-all-inclusive.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.124931+00:00"
+    "coletado_em": "2026-11-14T01:13:51.723253+00:00"
   },
   {
     "nome": "Txai Resort Itacaré",
@@ -1167,7 +1167,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/txai-resort-itacare-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.125703+00:00"
+    "coletado_em": "2026-11-14T01:13:51.723809+00:00"
   },
   {
     "nome": "Arraial d'Ajuda Eco Resort",
@@ -1177,7 +1177,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/arraial-dajuda-eco-resort.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.126506+00:00"
+    "coletado_em": "2026-11-14T01:13:51.724379+00:00"
   },
   {
     "nome": "Iberostar Waves Bahia",
@@ -1187,7 +1187,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/iberostar-bahia.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.127300+00:00"
+    "coletado_em": "2026-11-14T01:13:51.724935+00:00"
   },
   {
     "nome": "Sauipe Mar Premium",
@@ -1197,7 +1197,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/sauipe-resorts-ala-mar-all-inclusive.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.128095+00:00"
+    "coletado_em": "2026-11-14T01:13:51.725500+00:00"
   },
   {
     "nome": "Fasano Trancoso",
@@ -1207,7 +1207,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/fasano-trancoso.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.128887+00:00"
+    "coletado_em": "2026-11-14T01:13:51.726069+00:00"
   },
   {
     "nome": "Iberostar Selection Praia do Forte",
@@ -1217,7 +1217,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/iberostar-selection-praia-do-forte.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.129665+00:00"
+    "coletado_em": "2026-11-14T01:13:51.726623+00:00"
   },
   {
     "nome": "Transamerica Resort Comandatuba All-Inclusive",
@@ -1227,7 +1227,7 @@
     "desconto_pct": 35.0,
     "link": "https://www.zarpo.com.br/hotel/transamerica-resort-comandatuba-all-inclusive.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:33.130550+00:00"
+    "coletado_em": "2026-11-14T01:13:51.727260+00:00"
   },
   {
     "nome": "Vila Galé Marés",
@@ -1237,7 +1237,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/vila-gale-mares-resort-all-inclusive.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.211716+00:00"
+    "coletado_em": "2026-11-14T01:14:02.782263+00:00"
   },
   {
     "nome": "Catussaba Resort",
@@ -1247,7 +1247,7 @@
     "desconto_pct": 30.0,
     "link": "https://www.zarpo.com.br/hotel/catussaba-resort-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.212594+00:00"
+    "coletado_em": "2026-11-14T01:14:02.782916+00:00"
   },
   {
     "nome": "Ecoporan Hotel Charme Spa & Eventos",
@@ -1257,7 +1257,7 @@
     "desconto_pct": 36.0,
     "link": "https://www.zarpo.com.br/hotel/ecoporan-hotel-charme-spa-eventos-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.213457+00:00"
+    "coletado_em": "2026-11-14T01:14:02.783543+00:00"
   },
   {
     "nome": "Patachocas",
@@ -1267,7 +1267,7 @@
     "desconto_pct": 15.0,
     "link": "https://www.zarpo.com.br/hotel/patachocas.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.214316+00:00"
+    "coletado_em": "2026-11-14T01:14:02.784170+00:00"
   },
   {
     "nome": "Vila Galé Salvador",
@@ -1277,7 +1277,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/vila-gale-salvador-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.215125+00:00"
+    "coletado_em": "2026-11-14T01:14:02.784737+00:00"
   },
   {
     "nome": "Villa dos Corais Pousada",
@@ -1287,7 +1287,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/villa-dos-corais-pousada.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.215938+00:00"
+    "coletado_em": "2026-11-14T01:14:02.785320+00:00"
   },
   {
     "nome": "Saint Tropez Praia Hotel",
@@ -1297,7 +1297,7 @@
     "desconto_pct": 10.0,
     "link": "https://www.zarpo.com.br/hotel/saint-tropez-praia-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.216833+00:00"
+    "coletado_em": "2026-11-14T01:14:02.785955+00:00"
   },
   {
     "nome": "Coroa Vermelha Beach All-Inclusive",
@@ -1307,17 +1307,17 @@
     "desconto_pct": 10.0,
     "link": "https://www.zarpo.com.br/hotel/hotel-coroa-vermelha-beach-all-inclusive.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.217679+00:00"
+    "coletado_em": "2026-11-14T01:14:02.786573+00:00"
   },
   {
     "nome": "Resort La Torre - All-Inclusive",
     "localizacao": "",
-    "preco_por_noite": 2498.0,
-    "preco_total": 9992.0,
+    "preco_por_noite": 1959.0,
+    "preco_total": 3918.0,
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/resort-la-torre-all-inclusive.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.218470+00:00"
+    "coletado_em": "2026-11-14T01:14:02.787145+00:00"
   },
   {
     "nome": "Pousada Tropical",
@@ -1327,7 +1327,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pousada-tropical.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.219312+00:00"
+    "coletado_em": "2026-11-14T01:14:02.787738+00:00"
   },
   {
     "nome": "Porto Calem Praia Hotel",
@@ -1337,7 +1337,7 @@
     "desconto_pct": 41.0,
     "link": "https://www.zarpo.com.br/hotel/porto-calem-praia-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.220121+00:00"
+    "coletado_em": "2026-11-14T01:14:02.788323+00:00"
   },
   {
     "nome": "Pousada do Mar",
@@ -1347,7 +1347,7 @@
     "desconto_pct": 12.0,
     "link": "https://www.zarpo.com.br/hotel/pousada-do-mar-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.220976+00:00"
+    "coletado_em": "2026-11-14T01:14:02.788935+00:00"
   },
   {
     "nome": "Céu e Mar de Taipu",
@@ -1357,7 +1357,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/ceu-e-mar-de-taipu-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.221817+00:00"
+    "coletado_em": "2026-11-14T01:14:02.789553+00:00"
   },
   {
     "nome": "Hotel Pousada Natureza",
@@ -1367,7 +1367,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pousada-natureza-morro-de-sao-paulo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:44.222601+00:00"
+    "coletado_em": "2026-11-14T01:14:02.790132+00:00"
   },
   {
     "nome": "Fiesta Bahia Hotel",
@@ -1377,7 +1377,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/fiesta-bahia-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.080849+00:00"
+    "coletado_em": "2026-11-14T01:14:13.695269+00:00"
   },
   {
     "nome": "Pousada Praia Bela",
@@ -1387,7 +1387,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pousada-praia-bela-ilheus-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.081671+00:00"
+    "coletado_em": "2026-11-14T01:14:13.695879+00:00"
   },
   {
     "nome": "Pousada Vira Canoa",
@@ -1397,7 +1397,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/pousada-vira-canoa-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.082489+00:00"
+    "coletado_em": "2026-11-14T01:14:13.696468+00:00"
   },
   {
     "nome": "Terra Boa Hotel Boutique",
@@ -1407,7 +1407,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/terra-boa-hotel-boutique-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.083300+00:00"
+    "coletado_em": "2026-11-14T01:14:13.697053+00:00"
   },
   {
     "nome": "Jardim Atlântico Beach Resort",
@@ -1417,7 +1417,17 @@
     "desconto_pct": 10.0,
     "link": "https://www.zarpo.com.br/hotel/jardim-atlantico-beach-resort.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.084171+00:00"
+    "coletado_em": "2026-11-14T01:14:13.697676+00:00"
+  },
+  {
+    "nome": "Pousada Villa Maeva Itacimirim",
+    "localizacao": "",
+    "preco_por_noite": 404.0,
+    "preco_total": 404.0,
+    "desconto_pct": null,
+    "link": "https://www.zarpo.com.br/hotel/pousada-villa-maeva-itacimirim.html",
+    "fonte": "zarpo",
+    "coletado_em": "2026-11-14T01:14:13.698250+00:00"
   },
   {
     "nome": "Village Paraíso Tropical",
@@ -1427,7 +1437,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/village-paraiso-tropical-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.084980+00:00"
+    "coletado_em": "2026-11-14T01:14:13.698816+00:00"
   },
   {
     "nome": "Gran Hotel Stella Maris",
@@ -1437,17 +1447,7 @@
     "desconto_pct": 33.0,
     "link": "https://www.zarpo.com.br/hotel/gran-hotel-stella-maris-urban-resort-conventions.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.085923+00:00"
-  },
-  {
-    "nome": "Pousada Villa Maeva Itacimirim",
-    "localizacao": "",
-    "preco_por_noite": 436.0,
-    "preco_total": 436.0,
-    "desconto_pct": null,
-    "link": "https://www.zarpo.com.br/hotel/pousada-villa-maeva-itacimirim.html",
-    "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.086716+00:00"
+    "coletado_em": "2026-11-14T01:14:13.699510+00:00"
   },
   {
     "nome": "Resende Imperial Hotel & SPA",
@@ -1457,7 +1457,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/resende-imperial-hotel-spa-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.087514+00:00"
+    "coletado_em": "2026-11-14T01:14:13.700089+00:00"
   },
   {
     "nome": "Aldeia do Mar Sensorial Hotel",
@@ -1467,7 +1467,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/aldeia-do-mar-hotel.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.088306+00:00"
+    "coletado_em": "2026-11-14T01:14:13.700650+00:00"
   },
   {
     "nome": "Moã Charme Hotel",
@@ -1477,7 +1477,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/moa-charme-hotel-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.089101+00:00"
+    "coletado_em": "2026-11-14T01:14:13.701242+00:00"
   },
   {
     "nome": "Vivant Eco Beach Hotel by Livá",
@@ -1487,7 +1487,7 @@
     "desconto_pct": 30.0,
     "link": "https://www.zarpo.com.br/hotel/vivant-eco-beach-hotel-by-liva-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.089967+00:00"
+    "coletado_em": "2026-11-14T01:14:13.701843+00:00"
   },
   {
     "nome": "Vila dos Orixás Boutique Hotel",
@@ -1497,7 +1497,7 @@
     "desconto_pct": null,
     "link": "https://www.zarpo.com.br/hotel/vila-dos-orixas-boutique-hotel-zarpo.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.090815+00:00"
+    "coletado_em": "2026-11-14T01:14:13.702448+00:00"
   },
   {
     "nome": "Vila Angatu Eco Resort & SPA",
@@ -1507,6 +1507,6 @@
     "desconto_pct": 37.0,
     "link": "https://www.zarpo.com.br/hotel/vila-angatu-eco-resort-spa.html",
     "fonte": "zarpo",
-    "coletado_em": "2026-11-13T18:21:55.091685+00:00"
+    "coletado_em": "2026-11-14T01:14:13.703103+00:00"
   }
 ]
